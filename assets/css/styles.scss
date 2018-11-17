@@ -1,0 +1,346 @@
+---
+# Front matter comment to ensure Jekyll properly reads file.
+---
+
+
+//---------------MOBILE------------MOBILE-----------------MOBILE
+html {
+  height: 100%;
+  width: 100%;
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+body{
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+}
+a:hover, a:active, a:focus {
+  outline: 0;
+}
+
+#nav {
+  text-align: center;
+  margin: 5px;
+  padding: 5px;
+  padding-right: 5px;
+  font-size: 100%;
+  position: fixed;
+  z-index: 1;
+  right: 0;
+
+  a {
+    text-decoration: none;
+    color: orange;
+    padding: 10px;
+  }
+
+}
+
+
+#wrapper1{
+  background-color: black;
+  height: 200vh;
+  display: block;
+}
+
+#section1 {
+  height: 100vh;
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding: 0px;
+  padding-top: 20px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+#logo{
+  width: 200px;
+  height: 200px;
+  padding: 20px;
+  padding-top: 50px;
+}
+
+
+#canvas-text {
+  font-size: 250%;
+  margin-top: 10px;
+  overflow: hidden;
+  height: auto;
+
+
+  h1 {
+    margin: 10px;
+    animation: slide-left 0.5s;
+    margin-top: 10px
+  }
+}
+
+
+@keyframes slide-left {
+  from {
+    margin-right: 100%;
+    width: 300%
+  }
+  to {
+    margin-right: 250px;
+    width: 100%;
+  }
+}
+
+#section2 {
+  height: 100%;
+  text-align: center;
+  background-color: white;
+  padding-top: 200px;
+
+  -webkit-clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
+  clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
+
+  h1 {
+    color: black;
+    font-size: 250%;
+  }
+}
+
+#section3 {
+  padding-top: 200px;
+  height: 460vh;
+  text-align: center;
+  background-color: black;
+
+  padding-bottom: 10px;
+  text-align: center;
+  margin-top: -200px;
+
+  -webkit-clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
+  clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
+
+  h2 {
+    font-size: 250%;
+    color: white;
+  }
+
+}
+
+#roster-wrap{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 100px;
+
+}
+
+.roster-item {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+.roster-image{
+  background-color: white;
+  height: 250px;
+  width: 200px;
+  margin: 15px;
+  padding: 20px;
+}
+
+.roster-text {
+  font-size: 100%;
+  color: white;
+
+  b{
+    font-size: 150%;
+  }
+}
+#footer  {
+  height: 30vh;
+  text-align: center;
+  padding-top: 20px;
+  background-color: orange;
+  font-size: 100%;
+}
+
+
+
+
+//----------------------DESKTOP------DESKTOP----------DESKTOP--------------------------------
+
+@media only screen and (min-width: 768px) {
+// Add your styles here
+
+
+  #header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    height: 20vh;
+  }
+
+  #logo{
+    width: 420px;
+    height: 420px;
+    float:left;
+    padding: 20px;
+    padding-left: 50px;
+    padding-top: 100px;
+
+  }
+
+  #nav {
+    float: right;
+    margin: 10px;
+    padding: 20px;
+    padding-right: 50px;
+    font-size: 100%;
+    position: fixed;
+    z-index: 1;
+    right: 0;
+    a {
+      text-decoration: none;
+      color: orange;
+      padding: 20px;
+    }
+    :hover {
+      text-shadow: 10px -15px white;
+    }
+  }
+
+
+
+
+
+  #wrapper1{
+    background-color: black;
+    height: 200vh;
+    display: block;
+  }
+
+  #section1 {
+    height: 50%;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 0px;
+    padding-top: 20px;
+
+    display: block;
+  }
+
+  #canvas-img {
+  float: left;
+  }
+
+  #canvas-text {
+    font-size: 250%;
+
+    margin-top: 200px;
+
+    overflow: hidden;
+    max-height: inherit;
+
+    h1 {
+      animation: slide-left 1s;
+    }
+  }
+
+
+  @keyframes slide-left {
+    from {
+      margin-right: 100%;
+      width: 300%
+    }
+    to {
+      margin-right: 250px;
+      width: 100%;
+    }
+  }
+
+
+
+  #section2 {
+    height: 100%;
+    text-align: center;
+    background-color: white;
+    padding-top: 200px;
+
+    -webkit-clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
+
+    h1 {
+      color: black;
+      font-size: 250%;
+    }
+  }
+
+  #section3 {
+    padding-top: 200px;
+    height: 150vh;
+    text-align: center;
+    background-color: black;
+
+    padding-bottom: 10px;
+    text-align: center;
+    margin-top: -200px;
+
+    -webkit-clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
+
+    h2 {
+      font-size: 250%;
+      color: white;
+    }
+
+  }
+
+  #roster-wrap{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-top: 100px
+  }
+
+  .roster-item {
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .roster-image{
+    background-color: white;
+    height: 250px;
+    width: 150px;
+    margin: 0px;
+  }
+
+  .roster-text {
+    font-size: 100%;
+    color: white;
+
+    b{
+      font-size: 150%;
+    }
+  }
+
+
+  #footer  {
+    height: 30vh;
+    text-align: center;
+    padding-top: 20px;
+    background-color: orange;
+    font-size: 100%;
+  }
+
+
+  #roster  {
+   padding: 20px;
+  }
+}

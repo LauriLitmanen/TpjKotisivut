@@ -5,46 +5,73 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>TPJ</title>
-  <link rel="stylesheet" href="/assets/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/styles.css">
+
+
 </head>
 <body>
-
-  <div id="header">
+  <div id="nav">
     <a href="#section1">Home</a>
-    <a href="#section2">section2</a>
-    <a href="#section3">section3</a>
-    <a href="#footer">footer</a>
-  </div>
-
-  <div id="section1">
-    <h1>Tpj kotisivut</h1>
-
-    <h2>seuraavat ottelut:</h2>
-    <tr>
-      <td>tiistaina</td>
-      <td>tpj vs kikkelit</td>
-    </tr>
-    <tr>
-      <td>keskiviikkona</td>
-      <td>tpj vs kukkoilijat</td>
-    </tr>
-  </div>
-
-  <div id="section2">
-    <h1>jotain skeidaa</h1>
-  </div>
-
-  <div id="section3">
-    <h2>lisää skeidaa</h2>
-  </div>
-
-  <div id="footer">
-    <p>About Us</p>
-    <p>Tilaa matsihäläri</p>
-    <p>Twitter</p>
-    <p>twitch</p>
+    <a href="#news-header">News</a>
+    <a href="#roster-header">Roster</a>
+    <a href="#footer">About Us</a>
   </div>
 
 
+
+  <div id="wrapper1">
+    <div id="section1">
+      <div id="canvas-img"><img id="logo" src="assets/images/TPJ_LOGO_white_circle.png" alt="logo" style="display:none;" ></div>
+
+      <div id="canvas-text">
+        <h1 id="canvas-text-1">TPJ </h1>
+        <h1 id="canvas-text-2">GAMING</h1>
+      </div>
+    </div>
+    <div id="section2">
+      <h1 id="news-header">News</h1>
+    </div>
+    <div id="section3">
+      <h2 id="roster-header">Roster</h2>
+      <div id="roster-wrap">
+        <div class="roster-item">
+          <div class="roster-image"></div>
+          <div class="roster-text"><p>Antti Paasi <br><b>HaTsy</b></p></div>
+        </div>
+        <div class="roster-item">
+          <div class="roster-image"></div>
+          <div class="roster-text"><p>Lauri Litmanen <br> <b>amispeppu</b></p></div>
+        </div>
+        <div class="roster-item">
+          <div class="roster-image"></div>
+          <div class="roster-text"><p> Teemu Makkonen <br> <b>mako</b></p></div>
+        </div>
+        <div class="roster-item">
+          <div class="roster-image"></div>
+          <div class="roster-text"><p>Otto Koponen <br> <b>Torso</b></p></div>
+        </div>
+        <div class="roster-item">
+          <div class="roster-image"></div>
+          <div class="roster-text"><p>Teemu Puupponen <br> <b>stemu</b></p></div>
+        </div>
+      </div>
+    </div>
+    <div id="footer">
+      <p>About Us</p>
+      <p>Tilaa matsihäläri</p>
+      <p>Twitter</p>
+      <p>twitch</p>
+    </div>
+  </div>
+
+
+
+
+
+
+
+<script src="assets/javascript/jquery-3.3.1.js"></script>
+<script src="assets/javascript/main.js"></script>
 </body>
 </html>
