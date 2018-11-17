@@ -1,7 +1,7 @@
 // -----------------FADE IN IMAGE---------------
 
 $('#canvas-img').ready(function(){
-  $('#logo').fadeIn(1000);
+  $('#logo').fadeIn(3000);
 });
 
 

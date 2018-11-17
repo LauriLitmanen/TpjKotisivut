@@ -141,14 +141,19 @@ a:hover, a:active, a:focus {
   display: flex;
   flex-direction: column;
   margin: 20px;
+  align-items: center;
+  justify-content: center;
+
 }
 
 .roster-image{
   background-color: white;
   height: 250px;
   width: 200px;
-  margin: 15px;
+  margin: 10px;
+  margin-bottom: 10px;
   padding: 20px;
+
 }
 
 .roster-text {
@@ -239,7 +244,7 @@ a:hover, a:active, a:focus {
   }
 
   #canvas-text {
-    font-size: 250%;
+    font-size: 400%;
 
     margin-top: 200px;
 
@@ -247,7 +252,14 @@ a:hover, a:active, a:focus {
     max-height: inherit;
 
     h1 {
+
       animation: slide-left 1s;
+      background-image: url(mirage.jpeg);
+      background-position: center, right;
+      background-size: contain;
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
     }
   }
 
@@ -303,7 +315,7 @@ a:hover, a:active, a:focus {
   #roster-wrap{
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: center;
     margin-top: 100px
   }
