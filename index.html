@@ -13,9 +13,9 @@
 <body>
   <div id="nav">
     <a href="#section1">Home</a>
-    <a href="#news-header">News</a>
+    <a href="#stream-header">Stream</a>
     <a href="#roster-header">Roster</a>
-    <a href="#footer">About Us</a>
+    <a href="#footer">Contact Us</a>
   </div>
 
 
@@ -30,7 +30,12 @@
       </div>
     </div>
     <div id="section2">
-      <h1 id="news-header">News</h1>
+      <div id="stream-header">
+        <h1 id="stream-header">Stream</h1>
+      </div>
+      <div id="stream-wrap">
+        <div id="twitch-embed"></div>
+      </div>
     </div>
     <div id="section3">
       <h2 id="roster-header">Roster</h2>
@@ -58,10 +63,9 @@
       </div>
     </div>
     <div id="footer">
-      <p>About Us</p>
-      <p>Tilaa matsihäläri</p>
-      <p>Twitter</p>
-      <p>twitch</p>
+      <a href="https://www.twitch.tv/tpjcommunity"><p>Twitch</p></a>
+      <a href="https://twitter.com/TpjCommunity"><p>Twitter</p></a>
+      <a href="mailto:gaming.tpj@gmail.com"><p>Contact Us</p></a>
     </div>
   </div>
 
@@ -72,6 +76,8 @@
 
 
 <script src="assets/javascript/jquery-3.3.1.js"></script>
+<script src="https://embed.twitch.tv/embed/v1.js"></script>
 <script src="assets/javascript/main.js"></script>
+
 </body>
 </html>
