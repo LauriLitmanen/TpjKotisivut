@@ -1,6 +1,7 @@
 $(function(){ //On page load function
 
   //------------------TWITCH EMBEDDED-------------------
+  /*
   new Twitch.Embed("twitch-embed", {
         width: '95%',
         height: 480,
@@ -8,7 +9,7 @@ $(function(){ //On page load function
         theme: 'light'
       });
 
-*/
+      */
 
 
   // -----------------FADE IN IMAGE---------------
@@ -57,4 +58,10 @@ $(function(){ //On page load function
         }
       }
     });
+});
+//------------------------ MATCH LIST --------------------------------------------
+$('.match-list').on('click', '.match-item', function(e){
+  e.preventDefault();
+  $(this).next('.scoreboard').not('animated').slideToggle();
+  
 });

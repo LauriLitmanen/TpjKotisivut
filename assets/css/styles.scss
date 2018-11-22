@@ -370,6 +370,67 @@ a:hover, a:active, a:focus {
       font-size: 150%;
     }
   }
+#section4{
+  padding-top: 200px;
+  height: 150vh;
+  text-align: center;
+  background-color: white;
+
+  padding-bottom: 10px;
+  text-align: center;
+  margin-top: -200px;
+
+  -webkit-clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
+  clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
+
+  h1 {
+    font-size: 250%;
+  }
+}
+
+
+.match-list{
+  list-style-type: none;
+  outline: none;
+
+
+  button {
+    all: unset;
+    width: 80%;
+    height: 2em;
+    background-color: #EAE9E9;
+    padding: 10px;
+    margin: 15px;
+    outline: none;
+    box-shadow: 0 4px 8px 0 rgba(60, 60, 60, 0.2), 0 6px 20px 0 rgba(60, 60, 60, 0.19);
+
+    :hover{
+      //box-shadow: 0 4px 8px 0 rgba(130, 130, 130, 0.2), 0 6px 20px 0 rgba(130, 130, 130, 0.19);
+    }
+
+  }
+}
+
+
+.match-item{
+
+
+
+}
+
+.scoreboard{
+  display:none;
+}
+
+
+
+
+
+
+
+
+
+
 
 
   #footer  {
