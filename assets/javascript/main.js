@@ -1,7 +1,6 @@
-//------------------TWITCH EMBEDDED-------------------
-
 $(function(){ //On page load function
-  /*
+
+  //------------------TWITCH EMBEDDED-------------------
   new Twitch.Embed("twitch-embed", {
         width: '95%',
         height: 480,
@@ -12,7 +11,7 @@ $(function(){ //On page load function
 */
 
 
-      // -----------------FADE IN IMAGE---------------
+  // -----------------FADE IN IMAGE---------------
 
   $('#canvas-img').ready(function(){
     $('#logo').fadeIn(1000);
