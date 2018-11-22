@@ -1,5 +1,7 @@
 //------------------TWITCH EMBEDDED-------------------
+
 $(function(){ //On page load function
+  /*
   new Twitch.Embed("twitch-embed", {
         width: '95%',
         height: 480,
@@ -7,13 +9,13 @@ $(function(){ //On page load function
         theme: 'light'
       });
 
-
+*/
 
 
       // -----------------FADE IN IMAGE---------------
 
   $('#canvas-img').ready(function(){
-    $('#logo').fadeIn(3000);
+    $('#logo').fadeIn(1000);
   });
 
 
