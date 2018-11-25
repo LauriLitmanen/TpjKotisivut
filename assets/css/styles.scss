@@ -12,6 +12,7 @@ html {
   margin-right: 0;
   margin-bottom: 0;
   font-family: 'Roboto Condensed', sans-serif;
+  overflow-x: hidden;
 }
 body{
   margin-top: 0;
@@ -24,6 +25,8 @@ a:hover, a:active, a:focus {
 }
 
 #nav {
+  
+
   text-align: center;
   margin: 5px;
   padding: 5px;
@@ -109,9 +112,13 @@ a:hover, a:active, a:focus {
   }
 }
 
+#stream-wrap {
+  display: none;
+}
+
 #section3 {
   padding-top: 200px;
-  height: 500vh;
+  height: 400 vh;
   text-align: center;
   background-color: black;
 
@@ -164,212 +171,7 @@ a:hover, a:active, a:focus {
     font-size: 150%;
   }
 }
-#footer  {
-  height: 30vh;
-  text-align: center;
-  padding-top: 20px;
-  background-color: orange;
-  font-size: 100%;
 
-  a {
-    text-decoration: none;
-    color: black;
-
-
-  p {
-    margin: 0px;
-    padding: 16px;
-    height: 20px;
-  }
-}
-}
-
-
-
-
-//----------------------DESKTOP------DESKTOP----------DESKTOP--------------------------------
-
-@media only screen and (min-width: 768px) {
-// Add your styles here
-
-
-  #header {
-    background-color: black;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    height: 20vh;
-  }
-
-  #logo{
-    width: 420px;
-    height: 420px;
-    float:left;
-    padding: 20px;
-    padding-left: 50px;
-    padding-top: 100px;
-
-  }
-
-  #nav {
-    float: right;
-    margin: 10px;
-    padding: 20px;
-    padding-right: 50px;
-    font-size: 100%;
-    position: fixed;
-    z-index: 1;
-    right: 0;
-    a {
-      text-decoration: none;
-      color: orange;
-      padding: 20px;
-    }
-    :hover {
-      //text-shadow: 10px -15px white;
-      font-style: italic;
-    }
-  }
-
-
-
-
-
-  #wrapper1{
-    background-color: black;
-    height: 200vh;
-    display: block;
-  }
-
-  #section1 {
-    height: 50%;
-    text-align: center;
-    background-color: black;
-    color: white;
-    padding: 0px;
-    padding-top: 20px;
-
-    display: block;
-  }
-
-  #canvas-img {
-  float: left;
-  }
-
-  #canvas-text {
-    font-size: 500%;
-
-    margin-top: 200px;
-
-    overflow: hidden;
-    max-height: inherit;
-
-    h1 {
-
-      animation: slide-left 1s;
-      background-image: url(mirage.jpeg);
-      background-position: center, right;
-      background-size: contain;
-      background-clip: text;
-      -webkit-background-clip: text;
-      color: transparent;
-    }
-  }
-
-
-  @keyframes slide-left {
-    from {
-      margin-right: 100%;
-      width: 300%
-    }
-    to {
-      margin-right: 250px;
-      width: 100%;
-    }
-  }
-
-
-
-  #section2 {
-    height: 70%;
-    text-align: center;
-    background-color: white;
-    padding-top: 200px;
-
-    -webkit-clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
-    clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
-
-    h1 {
-      color: black;
-      font-size: 250%;
-    }
-  }
-
-  #section3 {
-    padding-top: 200px;
-    height: 150vh;
-    text-align: center;
-    background-color: black;
-
-    padding-bottom: 10px;
-    text-align: center;
-    margin-top: -200px;
-
-    -webkit-clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
-    clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
-
-    h2 {
-      font-size: 250%;
-      color: white;
-    }
-
-  }
-
-  #roster-wrap{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 100px
-  }
-
-  .roster-item {
-    display: flex;
-    flex-direction: column;
-    box-shadow: 0 4px 8px 0 rgba(183, 183, 183, 0.2), 0 6px 20px 0 rgba(183, 183, 183, 0.2);
-    background-color: black;
-    //border-radius: 20px;
-
-
-
-    :hover {
-    //box-shadow: 0 4px 8px 0 rgba(183, 183, 183, 0.2), 0 6px 20px 0 rgba(183, 183, 183, 0.19);
-    }
-
-  }
-
-  .roster-image{
-    height: 250px;
-    width: 150px;
-    margin: 0px;
-
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,0+100;Neutral+Density */
-    background: rgb(252,255,244); /* Old browsers */
-    background: -moz-linear-gradient(-45deg, rgba(252,255,244,1) 0%, rgba(223,229,215,1) 40%, rgba(179,190,173,1) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(-45deg, rgba(252,255,244,1) 0%,rgba(223,229,215,1) 40%,rgba(179,190,173,1) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(135deg, rgba(252,255,244,1) 0%,rgba(223,229,215,1) 40%,rgba(179,190,173,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', endColorstr='#b3bead',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-  }
-
-  .roster-text {
-    font-size: 100%;
-    color: white;
-
-
-    b{
-      font-size: 150%;
-    }
-  }
 #section4{
   padding-top: 200px;
   height: 150vh;
@@ -441,19 +243,312 @@ a:hover, a:active, a:focus {
   display:none;
 }
 
-
 #footer  {
   height: 30vh;
   text-align: center;
   padding-top: 20px;
   background-color: orange;
   font-size: 100%;
-  text-decoration: none;
-  font-style: italic;
 
   a {
     text-decoration: none;
     color: black;
+
+
+  p {
+    margin: 0px;
+    padding: 16px;
+    height: 20px;
+  }
+}
+}
+
+
+
+
+//----------------------DESKTOP------DESKTOP----------DESKTOP----------------DESKTOP------DESKTOP----------DESKTOP-----------DESKTOP------DESKTOP----------DESKTOP-----------DESKTOP------DESKTOP----------DESKTOP------
+//----------------------DESKTOP------DESKTOP----------DESKTOP----------------DESKTOP------DESKTOP----------DESKTOP-----------DESKTOP------DESKTOP----------DESKTOP-----------DESKTOP------DESKTOP----------DESKTOP------
+//----------------------DESKTOP------DESKTOP----------DESKTOP----------------DESKTOP------DESKTOP----------DESKTOP-----------DESKTOP------DESKTOP----------DESKTOP-----------DESKTOP------DESKTOP----------DESKTOP------
+//----------------------DESKTOP------DESKTOP----------DESKTOP----------------DESKTOP------DESKTOP----------DESKTOP-----------DESKTOP------DESKTOP----------DESKTOP-----------DESKTOP------DESKTOP----------DESKTOP------
+//----------------------DESKTOP------DESKTOP----------DESKTOP----------------DESKTOP------DESKTOP----------DESKTOP-----------DESKTOP------DESKTOP----------DESKTOP-----------DESKTOP------DESKTOP----------DESKTOP------
+//----------------------DESKTOP------DESKTOP----------DESKTOP----------------DESKTOP------DESKTOP----------DESKTOP-----------DESKTOP------DESKTOP----------DESKTOP-----------DESKTOP------DESKTOP----------DESKTOP------
+
+@media only screen and (min-width: 768px) {
+// Add your styles here
+
+
+#nav {
+  
+
+  float: right;
+  margin: 10px;
+  padding: 20px;
+  padding-right: 50px;
+  font-size: 100%;
+  position: fixed;
+  z-index: 1;
+  right: 0;
+  a {
+    text-decoration: none;
+    color: orange;
+    padding: 20px;
+  }
+  :hover {
+    //text-shadow: 10px -15px white;
+    font-style: italic;
+  }
+}
+
+
+  
+  #wrapper1{
+    background-color: black;
+    height: 100%;
+    display: block;
+  }
+
+  #section1 {
+    height: 100vh;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 0px;
+    padding-top: 20px;
+
+    display: block;
+  }
+
+
+  #canvas-img {
+  float: left;
+  }
+
+  #logo{
+    width: 420px;
+    height: 420px;
+    float:left;
+    padding: 20px;
+    padding-left: 50px;
+    padding-top: 100px;
+
+  }
+
+  #canvas-text {
+    
+
+    margin-top: 200px;
+
+    overflow: hidden;
+    max-height: inherit;
+
+    h1 {
+      font-size: 500%;
+      animation: slide-left 1s;
+      background-image: url(mirage.jpeg);
+      background-position: center, right;
+      background-size: contain;
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+  }
+
+
+  @keyframes slide-left {
+    from {
+      margin-right: 100%;
+      width: 300%
+    }
+    to {
+      margin-right: 250px;
+      width: 100%;
+    }
+  }
+
+
+
+  #section2 {
+    height: 130vh;
+    text-align: center;
+    background-color: white;
+    padding-top: 200px;
+
+    -webkit-clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
+
+    h1 {
+      color: black;
+      font-size: 250%;
+    }
+  }
+
+  #stream-wrap {
+    display: block;
+  }
+
+  #section3 {
+    padding-top: 200px;
+    min-height: 140vh;
+    text-align: center;
+    background-color: black;
+
+    padding-bottom: 10px;
+    text-align: center;
+    margin-top: -200px;
+
+    -webkit-clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
+
+    h2 {
+      font-size: 250%;
+      color: white;
+    }
+
+  }
+
+  #roster-wrap{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 100px
+  }
+
+  .roster-item {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px 0 rgba(183, 183, 183, 0.2), 0 6px 20px 0 rgba(183, 183, 183, 0.2);
+    background-color: black;
+    margin: 2vw;
+    //border-radius: 20px;
+
+
+
+    :hover {
+    //box-shadow: 0 4px 8px 0 rgba(183, 183, 183, 0.2), 0 6px 20px 0 rgba(183, 183, 183, 0.19);
+    }
+
+  }
+
+  .roster-image{
+    height: 250px;
+    width: 150px;
+    margin: 0px;
+
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,0+100;Neutral+Density */
+    background: rgb(252,255,244); /* Old browsers */
+    background: -moz-linear-gradient(-45deg, rgba(252,255,244,1) 0%, rgba(223,229,215,1) 40%, rgba(179,190,173,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, rgba(252,255,244,1) 0%,rgba(223,229,215,1) 40%,rgba(179,190,173,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, rgba(252,255,244,1) 0%,rgba(223,229,215,1) 40%,rgba(179,190,173,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', endColorstr='#b3bead',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  }
+
+  .roster-text {
+    font-size: 100%;
+    color: white;
+
+
+    b{
+      font-size: 150%;
+    }
+  }
+#section4{
+  padding-top: 200px;
+  height: 110vh;
+  text-align: center;
+  background-color: white;
+
+  padding-bottom: 10px;
+  text-align: center;
+  margin-top: -200px;
+
+  -webkit-clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
+  clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
+
+  h1 {
+    
+    font-size: 250%;
+  }
+}
+.matches-content {
+ display: flex;
+ flex-direction: row;
+ justify-content: flex-start;
+ align-items: flex-start;
+ align-content: flex-start;
+}
+
+#upcoming {
+  display: inline-block;
+  width: 48%;
+  height: 100%;
+  top: 0;
+}
+
+#results{
+  display: inline-block;
+  width: 48%;
+  height: 100%;
+  top: 0;
+}
+
+.match-list{
+  list-style-type: none;
+  outline: none;
+
+
+  button {
+    all: unset;
+    width: 80%;
+    height: 2em;
+    background-color: #EAE9E9;
+    padding: 10px;
+    margin: 15px;
+    outline: none;
+    box-shadow: 0 4px 8px 0 rgba(60, 60, 60, 0.2), 0 6px 20px 0 rgba(60, 60, 60, 0.19);
+
+    :hover{
+      //box-shadow: 0 4px 8px 0 rgba(130, 130, 130, 0.2), 0 6px 20px 0 rgba(130, 130, 130, 0.19);
+    }
+
+  }
+}
+
+
+.match-item{
+
+
+}
+
+.match-info{
+  display:none;
+  max-width: 100%;
+
+  
+}
+
+
+#footer  {
+  height: 30vh;
+  background-color: orange;
+  
+}
+#footer-wrap {
+  text-align: center;
+  padding: 10px;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+ 
+  align-items: center;
+  align-content: center;
+  margin: 20px;
+  
+  a {
+    text-decoration: none;
+    color: black;
+    font-size: 100%;
 
     :hover {
       font-size: 120%;
@@ -463,6 +558,8 @@ a:hover, a:active, a:focus {
     margin: 0px;
     padding: 16px;
     height: 20px;
+    font-style: italic;
+   
   }
   }
 }
