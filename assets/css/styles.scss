@@ -417,7 +417,7 @@ a:hover, a:active, a:focus {
   .roster-item {
     display: flex;
     flex-direction: column;
-    box-shadow: 0 4px 8px 0 rgba(183, 183, 183, 0.2), 0 6px 20px 0 rgba(183, 183, 183, 0.2);
+    box-shadow: 0 4px 8px 0 rgba(228, 228, 228, 0.2), 0 6px 20px 0 rgba(183, 183, 183, 0.2);
     background-color: black;
     margin: 2vw;
     //border-radius: 20px;
@@ -454,13 +454,17 @@ a:hover, a:active, a:focus {
   }
 #section4{
   padding-top: 200px;
-  height: 110vh;
+  
   text-align: center;
   background-color: white;
-
+  padding-bottom: 50px;
   padding-bottom: 10px;
   text-align: center;
   margin-top: -200px;
+
+  display: flex;
+  flex-direction: column;
+  min-height: 50vh;
 
   -webkit-clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
   clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
@@ -509,14 +513,19 @@ a:hover, a:active, a:focus {
 
     :hover{
       //box-shadow: 0 4px 8px 0 rgba(130, 130, 130, 0.2), 0 6px 20px 0 rgba(130, 130, 130, 0.19);
+      
     }
 
   }
 }
 
+li {
+  cursor: pointer;
+}
+
 
 .match-item{
-
+  
 
 }
 
