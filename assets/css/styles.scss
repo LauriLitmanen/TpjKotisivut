@@ -669,3 +669,46 @@ li {
    padding: 20px;
   }
 }
+
+/* LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- 
+LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- 
+LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- 
+LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- 
+LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS ---  */
+@media only screen  and (min-width : 1824px) {
+  #canvas-text {
+    margin-top: 300px;
+  }
+  #logo{
+
+    width: 600px;
+    height: 600px;
+    margin-left: 100px;
+    
+
+  }
+
+
+  #twitch-embed {
+    iframe {
+      height: 720px;
+      width: 1280px;
+    }
+  }
+
+  #section3 {
+    margin-top: -300px;
+    min-height: 150vh;
+  }
+
+  #substitute-container {
+    margin-right: 250px;
+  }
+
+  #standings-content {
+    padding: 50px;
+  }
+
+
+
+}
