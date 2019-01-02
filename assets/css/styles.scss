@@ -145,20 +145,35 @@ a:hover, a:active, a:focus {
 
 }
 
+#substitute-container {
+  //margin-right: 125px;
+}
+
+#subsitute-wrap{
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 50px;
+}
+
 #roster-wrap{
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin-top: 100px;
 
+
 }
 
-#caster-wrap{
+#caster-container {
+
+}
+#caster-wrap {
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin-top: 30px;
-
 }
 
 .roster-item {
@@ -187,6 +202,15 @@ a:hover, a:active, a:focus {
   b{
     font-size: 150%;
   }
+}
+
+.caster-roster-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+
 }
 
 #section4{
@@ -356,7 +380,7 @@ a:hover, a:active, a:focus {
 
   #canvas-img {
   float: left;
-  
+
   }
 
   #logo{
@@ -447,6 +471,18 @@ a:hover, a:active, a:focus {
     }
 
   }
+  .caster-roster-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+  }
+
+  #substitute-container {
+    margin-right: 125px;
+  }
 
   #roster-wrap{
     display: flex;
@@ -461,7 +497,8 @@ a:hover, a:active, a:focus {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 50px
+    margin-top: 50px;
+
   }
 
   .roster-item {

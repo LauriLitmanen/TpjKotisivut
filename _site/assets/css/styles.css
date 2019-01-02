@@ -103,6 +103,12 @@ iframe {
     font-size: 250%;
     color: white; }
 
+#subsitute-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 50px; }
+
 #roster-wrap {
   display: flex;
   flex-direction: column;
@@ -135,6 +141,13 @@ iframe {
   color: white; }
   .roster-text b {
     font-size: 150%; }
+
+.caster-roster-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center; }
 
 #section4 {
   padding-top: 200px;
@@ -308,6 +321,16 @@ iframe {
       font-size: 250%;
       padding-top: 50px;
       color: white; }
+
+  .caster-roster-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center; }
+
+  #substitute-container {
+    margin-right: 125px; }
 
   #roster-wrap {
     display: flex;
