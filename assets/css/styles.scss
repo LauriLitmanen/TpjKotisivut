@@ -14,6 +14,7 @@ html {
   font-family: 'Roboto Condensed', sans-serif;
   overflow-x: hidden;
 }
+
 body{
   margin-top: 0;
   margin-left: 0;
@@ -24,9 +25,11 @@ a:hover, a:active, a:focus {
   outline: 0;
 }
 
+
+
 #nav {
 
-
+  display: none;
   text-align: center;
   margin: 5px;
   padding: 5px;
@@ -98,7 +101,7 @@ a:hover, a:active, a:focus {
 }
 
 #section2 {
-  height: 100%;
+  height: 70%;
   text-align: center;
   background-color: white;
   padding-top: 200px;
@@ -113,23 +116,29 @@ a:hover, a:active, a:focus {
 }
 
 #stream-wrap {
-  display: none;
+  width: 100%;
+  height: auto;
 }
+  iframe{
+    height: 200px;
+    width: 300px;
+  }
 
 #section3 {
   padding-top: 200px;
-  height: 400 vh;
+  height: auto;
   text-align: center;
   background-color: black;
 
-  padding-bottom: 10px;
+  padding-bottom: 150px;
   text-align: center;
   margin-top: -200px;
 
-  -webkit-clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
-  clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
+  -webkit-clip-path: polygon(0 0, 100% 3%, 100% 100%, 0 100%);
+  clip-path: polygon(0 0, 100% 3%, 100% 100%, 0 100%);
 
   h2 {
+
     font-size: 250%;
     color: white;
   }
@@ -141,6 +150,14 @@ a:hover, a:active, a:focus {
   flex-direction: column;
   justify-content: center;
   margin-top: 100px;
+
+}
+
+#caster-wrap{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 30px;
 
 }
 
@@ -164,7 +181,7 @@ a:hover, a:active, a:focus {
 }
 
 .roster-text {
-  font-size: 100%;
+  font-size: 70%;
   color: white;
 
   b{
@@ -174,19 +191,20 @@ a:hover, a:active, a:focus {
 
 #section4{
   padding-top: 200px;
-  height: 150vh;
+  height: auto;
   text-align: center;
   background-color: white;
-
+  padding-top: 50px;
   padding-bottom: 10px;
   text-align: center;
-  margin-top: -200px;
+  margin-top: -150px;
 
   -webkit-clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
   clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
 
   h1 {
     font-size: 250%;
+    padding-top: 50px;
   }
 }
 .matches-content {
@@ -195,18 +213,22 @@ a:hover, a:active, a:focus {
  justify-content: flex-start;
  align-items: flex-start;
  align-content: flex-start;
+ text-align: center;
+ font-size: 13px;
 }
 
 #upcoming {
   display: inline-block;
-  width: 48%;
+  text-align: center;
+  width: 50%;
   height: 100%;
   top: 0;
 }
 
 #results{
   display: inline-block;
-  width: 48%;
+  text-align: center;
+  width: 50%;
   height: 100%;
   top: 0;
 }
@@ -214,6 +236,8 @@ a:hover, a:active, a:focus {
 .match-list{
   list-style-type: none;
   outline: none;
+  text-align: center;
+  padding-left: 0;
 
 
   button {
@@ -222,7 +246,9 @@ a:hover, a:active, a:focus {
     height: 2em;
     background-color: #EAE9E9;
     padding: 10px;
-    margin: 15px;
+    padding-bottom: 20px;
+    margin: 5px;
+    margin-bottom: 20px;
     outline: none;
     box-shadow: 0 4px 8px 0 rgba(60, 60, 60, 0.2), 0 6px 20px 0 rgba(60, 60, 60, 0.19);
 
@@ -246,9 +272,10 @@ a:hover, a:active, a:focus {
 #footer  {
   height: 30vh;
   text-align: center;
-  padding-top: 20px;
+
   background-color: orange;
   font-size: 100%;
+  padding: 10px;
 
   a {
     text-decoration: none;
@@ -257,10 +284,18 @@ a:hover, a:active, a:focus {
 
   p {
     margin: 0px;
-    padding: 16px;
+
+
+    padding: 15px;
     height: 20px;
   }
 }
+}
+
+#footer-wrap {
+  text-align: center;
+  height: 100%;
+  //padding: 10px;
 }
 
 
@@ -279,7 +314,7 @@ a:hover, a:active, a:focus {
 
 #nav {
 
-
+  display: block;
   float: right;
   margin: 10px;
   padding: 20px;
@@ -321,6 +356,7 @@ a:hover, a:active, a:focus {
 
   #canvas-img {
   float: left;
+  
   }
 
   #logo{
@@ -336,7 +372,7 @@ a:hover, a:active, a:focus {
   #canvas-text {
 
 
-    margin-top: 200px;
+    margin-top: 100px;
 
     overflow: hidden;
     max-height: inherit;
@@ -368,7 +404,7 @@ a:hover, a:active, a:focus {
 
 
   #section2 {
-    height: 130vh;
+    height: 150vh;
     text-align: center;
     background-color: white;
     padding-top: 200px;
@@ -386,9 +422,14 @@ a:hover, a:active, a:focus {
     display: block;
   }
 
+  iframe {
+    height: 480px;
+    width: 1080px;
+  }
+
   #section3 {
     padding-top: 200px;
-    min-height: 140vh;
+    min-height: 240vh;
     text-align: center;
     background-color: black;
 
@@ -401,6 +442,7 @@ a:hover, a:active, a:focus {
 
     h2 {
       font-size: 250%;
+      padding-top: 50px;
       color: white;
     }
 
@@ -412,6 +454,14 @@ a:hover, a:active, a:focus {
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 100px
+  }
+
+  #caster-wrap{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px
   }
 
   .roster-item {
@@ -453,18 +503,18 @@ a:hover, a:active, a:focus {
     }
   }
 #section4{
-  padding-top: 200px;
-
+  height: auto;
+  padding-top: 100px;
   text-align: center;
   background-color: white;
   padding-bottom: 50px;
-  padding-bottom: 10px;
+
   text-align: center;
-  margin-top: -200px;
+  margin-top: -70px;
 
   display: flex;
   flex-direction: column;
-  min-height: 50vh;
+
 
   -webkit-clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
   clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
@@ -480,6 +530,7 @@ a:hover, a:active, a:focus {
  justify-content: flex-start;
  align-items: flex-start;
  align-content: flex-start;
+ font-size: 16px;
 }
 
 #upcoming {
@@ -538,13 +589,15 @@ li {
 
 
 #footer  {
-  height: 30vh;
+  height: auto;
   background-color: orange;
+  bottom: 0;
 
 }
 #footer-wrap {
   text-align: center;
   padding: 10px;
+  padding-bottom: 0px;
 
   display: flex;
   flex-direction: column;
@@ -553,6 +606,7 @@ li {
   align-items: center;
   align-content: center;
   margin: 20px;
+  margin-bottom: 0px;
 
   a {
     text-decoration: none;
