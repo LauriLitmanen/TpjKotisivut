@@ -518,9 +518,17 @@ a:hover, a:active, a:focus {
   }
 
   .roster-image{
-    height: 250px;
-    width: 150px;
+    height: 290px;
+    width: 190px;
     margin: 0px;
+    padding: 0px;
+    
+    
+    .cover {
+
+    }
+
+    
 
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,0+100;Neutral+Density */
     background: rgb(252,255,244); /* Old browsers */
