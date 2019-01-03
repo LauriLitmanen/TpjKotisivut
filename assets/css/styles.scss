@@ -233,7 +233,7 @@ a:hover, a:active, a:focus {
 }
 .matches-content {
  display: flex;
- flex-direction: row;
+ flex-direction: column;
  justify-content: flex-start;
  align-items: flex-start;
  align-content: flex-start;
@@ -244,7 +244,7 @@ a:hover, a:active, a:focus {
 #upcoming {
   display: inline-block;
   text-align: center;
-  width: 50%;
+  width: 100%;
   height: 100%;
   top: 0;
 }
@@ -252,7 +252,7 @@ a:hover, a:active, a:focus {
 #results{
   display: inline-block;
   text-align: center;
-  width: 50%;
+  width: 100%;
   height: 100%;
   top: 0;
 }
@@ -522,13 +522,13 @@ a:hover, a:active, a:focus {
     width: 190px;
     margin: 0px;
     padding: 0px;
-    
-    
+
+
     .cover {
 
     }
 
-    
+
 
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,0+100;Neutral+Density */
     background: rgb(252,255,244); /* Old browsers */
@@ -678,10 +678,10 @@ li {
   }
 }
 
-/* LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- 
-LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- 
-LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- 
-LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- 
+/* LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS ---
+LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS ---
+LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS ---
+LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS ---
 LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS ---  */
 @media only screen  and (min-width : 1824px) {
   #canvas-text {
@@ -692,7 +692,7 @@ LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SC
     width: 600px;
     height: 600px;
     margin-left: 100px;
-    
+
 
   }
 
