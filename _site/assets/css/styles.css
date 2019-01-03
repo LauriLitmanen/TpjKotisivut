@@ -17,6 +17,46 @@ body {
 a:hover, a:active, a:focus {
   outline: 0; }
 
+/* MOBILE NAV MOBILE NAV MOBILE NAV MOBILE NAV*/
+#mobile-nav-btn {
+  color: orange;
+  position: fixed;
+  z-index: 1;
+  right: 0;
+  margin: 10px; }
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  opacity: 1;
+  background-color: rgba(25, 25, 25, 0.7);
+  overflow-x: hidden;
+  transition: 0.2s;
+  padding-top: 60px; }
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: orange;
+  display: block;
+  transition: 0.1s; }
+
+.sidenav a:hover {
+  color: #f1f1f1; }
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px; }
+
+/*MOBILE NAV MOBILE NAV MOBILE NAV MOBILE NAV MOBILE NAV*/
 #nav {
   display: none;
   text-align: center;
@@ -225,7 +265,10 @@ iframe {
   text-align: center;
   height: 100%; }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 769px) {
+  #mobile-nav-btn {
+    display: none; }
+
   #nav {
     display: block;
     float: right;

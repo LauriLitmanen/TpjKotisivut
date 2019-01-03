@@ -63,5 +63,19 @@ $(function(){ //On page load function
 $('.match-list').on('click', '.match-item', function(e){
   e.preventDefault();
   $(this).next('.match-info').not('animated').slideToggle();
-  
+
 });
+//------------------------- MOBIE NAV --------------------------------------
+function toggleNav() {
+  var nav = document.getElementById("mySidenav");
+  if (nav.style.width == "250px") {
+    nav.style.width = "0";
+  }
+  else {
+    nav.style.width = "250px";
+  }
+}
+/*
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}*/
