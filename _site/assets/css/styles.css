@@ -170,11 +170,10 @@ iframe {
 
 .roster-image {
   background-color: white;
-  height: 250px;
-  width: 200px;
+  height: 290px;
+  width: 190px;
   margin: 10px;
-  margin-bottom: 10px;
-  padding: 20px; }
+  margin-bottom: 10px; }
 
 .roster-text {
   font-size: 70%;
