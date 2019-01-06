@@ -292,6 +292,21 @@ a:focus {
  text-align: center;
  font-size: 13px;
 }
+.color-codes{
+  display: flex;
+  flex-direction: row;
+  align-items:baseline;
+  justify-content:center;
+}
+
+.square{
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  margin-left: 20px;
+  margin-right: 2px;
+
+}
 
 #upcoming {
   display: inline-block;
@@ -624,6 +639,12 @@ a:focus {
     font-size: 250%;
   }
 }
+
+#matches-header{
+
+}
+
+
 .matches-content {
  display: flex;
  flex-direction: row;
