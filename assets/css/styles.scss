@@ -27,10 +27,7 @@ a:active,
 a:focus {
   outline: 0;
 }
-
-
 // MOBILE NAV MOBILE NAV MOBILE NAV MOBILE NAV
-
 #mobile-nav-btn {
   color: #ffa500;
   margin: 10px;
@@ -62,8 +59,6 @@ a:focus {
  }
 }
 
-
-
 .sidenav a:hover {
   color: #f1f1f1;
 }
@@ -77,10 +72,7 @@ a:focus {
 }
  /*MOBILE NAV MOBILE NAV MOBILE NAV MOBILE NAV MOBILE NAV*/
 
-
-
 #nav {
-
   display: none;
   text-align: center;
   margin: 5px;
@@ -90,15 +82,12 @@ a:focus {
   position: fixed;
   z-index: 1;
   right: 0;
-
   a {
     text-decoration: none;
     color: orange;
     padding: 10px;
   }
-
 }
-
 
 #wrapper1{
   background-color: black;
@@ -113,7 +102,6 @@ a:focus {
   color: white;
   padding: 0px;
   padding-top: 20px;
-
   display: flex;
   flex-direction: column;
 }
@@ -125,21 +113,17 @@ a:focus {
   padding-top: 50px;
 }
 
-
 #canvas-text {
   font-size: 250%;
   margin-top: 10px;
   overflow: hidden;
   height: auto;
-
-
   h1 {
     margin: 10px;
     animation: slide-left 0.5s;
     margin-top: 10px
   }
 }
-
 
 @keyframes slide-left {
   from {
@@ -157,10 +141,8 @@ a:focus {
   text-align: center;
   background-color: white;
   padding-top: 200px;
-
   -webkit-clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
   clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
-
   h1 {
     color: black;
     font-size: 250%;
@@ -172,8 +154,10 @@ a:focus {
   height: auto;
 }
   iframe{
-    height: 200px;
-    width: 300px;
+    height: 80vh;
+    width: 80vw;
+    max-height: 700px;
+
   }
 
 #section3 {
@@ -181,20 +165,16 @@ a:focus {
   height: auto;
   text-align: center;
   background-color: black;
-
   padding-bottom: 150px;
   text-align: center;
   margin-top: -200px;
-
   -webkit-clip-path: polygon(0 0, 100% 3%, 100% 100%, 0 100%);
   clip-path: polygon(0 0, 100% 3%, 100% 100%, 0 100%);
 
   h2 {
-
     font-size: 250%;
     color: white;
   }
-
 }
 
 #substitute-container {
@@ -202,7 +182,6 @@ a:focus {
 }
 
 #subsitute-wrap{
-
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -214,12 +193,9 @@ a:focus {
   flex-direction: column;
   justify-content: center;
   margin-top: 100px;
-
-
 }
 
 #caster-container {
-
 }
 #caster-wrap {
   display: flex;
@@ -274,15 +250,14 @@ a:focus {
   padding-bottom: 10px;
   text-align: center;
   margin-top: -170px;
-
   -webkit-clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
   clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
-
   h1 {
     font-size: 250%;
     padding-top: 50px;
   }
 }
+
 .matches-content {
  display: flex;
  flex-direction: column;
@@ -292,6 +267,7 @@ a:focus {
  text-align: center;
  font-size: 13px;
 }
+
 .color-codes{
   display: flex;
   flex-direction: row;
@@ -305,7 +281,6 @@ a:focus {
   border-radius: 50%;
   margin-left: 20px;
   margin-right: 2px;
-
 }
 
 #upcoming {
@@ -329,8 +304,6 @@ a:focus {
   outline: none;
   text-align: center;
   padding-left: 0;
-
-
   button {
     all: unset;
     width: 80%;
@@ -346,14 +319,10 @@ a:focus {
     :hover{
       //box-shadow: 0 4px 8px 0 rgba(130, 130, 130, 0.2), 0 6px 20px 0 rgba(130, 130, 130, 0.19);
     }
-
   }
 }
 
-
 .match-item{
-
-
 }
 
 .match-info{
@@ -361,37 +330,30 @@ a:focus {
 }
 
 #footer  {
-  height: 30vh;
+  height: auto;
   text-align: center;
-
-  background-color: orange;
+  background-color: black;
   font-size: 100%;
   padding: 10px;
 
   a {
     text-decoration: none;
-    color: black;
-
-
+    color: white;
+  }
   p {
     margin: 0px;
-
-
+    color:white;
     padding: 15px;
     height: 20px;
   }
-}
 }
 
 #footer-wrap {
   text-align: center;
   height: 100%;
   //padding: 10px;
+  color:white;
 }
-
-
-
-
 //----------------------DESKTOP------DESKTOP----------DESKTOP----------------DESKTOP------DESKTOP----------DESKTOP-----------DESKTOP------DESKTOP----------DESKTOP-----------DESKTOP------DESKTOP----------DESKTOP------
 //----------------------DESKTOP------DESKTOP----------DESKTOP----------------DESKTOP------DESKTOP----------DESKTOP-----------DESKTOP------DESKTOP----------DESKTOP-----------DESKTOP------DESKTOP----------DESKTOP------
 //----------------------DESKTOP------DESKTOP----------DESKTOP----------------DESKTOP------DESKTOP----------DESKTOP-----------DESKTOP------DESKTOP----------DESKTOP-----------DESKTOP------DESKTOP----------DESKTOP------
@@ -405,9 +367,7 @@ a:focus {
   display: none;
 }
 
-
 #nav {
-
   display: block;
   float: right;
   margin: 10px;
@@ -443,14 +403,12 @@ a:focus {
     color: white;
     padding: 0px;
     padding-top: 20px;
-
     display: block;
   }
 
 
   #canvas-img {
   float: left;
-
   }
 
   #logo{
@@ -460,17 +418,12 @@ a:focus {
     padding: 20px;
     padding-left: 50px;
     padding-top: 100px;
-
   }
 
   #canvas-text {
-
-
     margin-top: 100px;
-
     overflow: hidden;
     max-height: inherit;
-
     h1 {
       font-size: 500%;
       animation: slide-left 1s;
@@ -494,18 +447,13 @@ a:focus {
       width: 100%;
     }
   }
-
-
-
   #section2 {
     height: 150vh;
     text-align: center;
     background-color: white;
     padding-top: 200px;
-
     -webkit-clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
     clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
-
     h1 {
       color: black;
       font-size: 250%;
@@ -526,20 +474,16 @@ a:focus {
     min-height: 240vh;
     text-align: center;
     background-color: black;
-
     padding-bottom: 10px;
     text-align: center;
     margin-top: -200px;
-
     -webkit-clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
     clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
-
     h2 {
       font-size: 250%;
       padding-top: 50px;
       color: white;
     }
-
   }
   .caster-roster-wrapper {
     display: flex;
@@ -547,7 +491,6 @@ a:focus {
     justify-content: center;
     align-items: center;
     align-content: center;
-
   }
 
   #substitute-container {
@@ -568,7 +511,6 @@ a:focus {
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 50px;
-
   }
 
   .roster-item {
@@ -577,14 +519,9 @@ a:focus {
     box-shadow: 0 4px 8px 0 rgba(228, 228, 228, 0.2), 0 6px 20px 0 rgba(183, 183, 183, 0.2);
     background-color: black;
     margin: 2vw;
-    //border-radius: 20px;
-
-
-
     :hover {
     //box-shadow: 0 4px 8px 0 rgba(183, 183, 183, 0.2), 0 6px 20px 0 rgba(183, 183, 183, 0.19);
     }
-
   }
 
   .roster-image{
@@ -592,14 +529,8 @@ a:focus {
     width: 190px;
     margin: 0px;
     padding: 0px;
-
-
     .cover {
-
     }
-
-
-
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,0+100;Neutral+Density */
     background: rgb(252,255,244); /* Old browsers */
     background: -moz-linear-gradient(-45deg, rgba(252,255,244,1) 0%, rgba(223,229,215,1) 40%, rgba(179,190,173,1) 100%); /* FF3.6-15 */
@@ -611,8 +542,6 @@ a:focus {
   .roster-text {
     font-size: 100%;
     color: white;
-
-
     b{
       font-size: 150%;
     }
@@ -623,19 +552,13 @@ a:focus {
   text-align: center;
   background-color: white;
   padding-bottom: 50px;
-
   text-align: center;
   margin-top: -70px;
-
   display: flex;
   flex-direction: column;
-
-
   -webkit-clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
   clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
-
   h1 {
-
     font-size: 250%;
   }
 }
@@ -643,8 +566,6 @@ a:focus {
 #matches-header{
 
 }
-
-
 .matches-content {
  display: flex;
  flex-direction: row;
@@ -672,7 +593,6 @@ a:focus {
   list-style-type: none;
   outline: none;
 
-
   button {
     all: unset;
     width: 80%;
@@ -682,12 +602,9 @@ a:focus {
     margin: 15px;
     outline: none;
     box-shadow: 0 4px 8px 0 rgba(60, 60, 60, 0.2), 0 6px 20px 0 rgba(60, 60, 60, 0.19);
-
     :hover{
       //box-shadow: 0 4px 8px 0 rgba(130, 130, 130, 0.2), 0 6px 20px 0 rgba(130, 130, 130, 0.19);
-
     }
-
   }
 }
 
@@ -695,35 +612,25 @@ li {
   cursor: pointer;
 }
 
-
 .match-item{
-
-
 }
 
 .match-info{
   display:none;
   max-width: 100%;
-
-
 }
-
 
 #footer  {
-  height: auto;
-  background-color: orange;
   bottom: 0;
-
 }
+
 #footer-wrap {
   text-align: center;
   padding: 10px;
   padding-bottom: 0px;
-
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-
   align-items: center;
   align-content: center;
   margin: 20px;
@@ -733,10 +640,9 @@ li {
     text-decoration: none;
     color: black;
     font-size: 100%;
-
+    }
     :hover {
-      font-size: 120%;
-
+      //font-size: 120%;
     }
   p {
     margin: 0px;
@@ -745,15 +651,16 @@ li {
     font-style: italic;
 
   }
-  }
 }
-
-
   #roster  {
    padding: 20px;
   }
-}
 
+
+
+
+
+}
 /* LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS ---
 LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS ---
 LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS ---
@@ -764,15 +671,10 @@ LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SC
     margin-top: 300px;
   }
   #logo{
-
     width: 600px;
     height: 600px;
     margin-left: 100px;
-
-
   }
-
-
   #twitch-embed {
     iframe {
       height: 720px;

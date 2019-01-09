@@ -15,7 +15,7 @@ $(function(){ //On page load function
   // -----------------FADE IN IMAGE---------------
 
   $('#canvas-img').ready(function(){
-    $('#logo').fadeIn(1000);
+    $('#logo').fadeIn(0000);
   });
 
 
