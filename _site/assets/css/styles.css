@@ -7,7 +7,7 @@ html {
   margin-top: 0;
   overflow-x: hidden;
   width: 100%;
-  background: url(mirage_placeholder.jpg) no-repeat center center fixed;
+  background: url(de_train_sumea.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -336,12 +336,13 @@ iframe {
     #canvas-text h1 {
       font-size: 500%;
       animation: slide-left 1s;
-      background-image: url(mirage.jpeg);
+      /*background-image: url(mirage.jpeg);
       background-position: center, right;
       background-size: contain;
       background-clip: text;
       -webkit-background-clip: text;
-      color: transparent; }
+      color: transparent;*/
+      color: white; }
 
   @keyframes slide-left {
     from {
