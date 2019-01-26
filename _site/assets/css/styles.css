@@ -84,7 +84,7 @@ a:focus {
 #section1 {
   height: 100vh;
   text-align: center;
-  background-color: black;
+  background-color: rgba(25, 25, 25, 0);
   color: white;
   padding: 0px;
   padding-top: 20px;
@@ -104,7 +104,6 @@ a:focus {
   height: auto; }
   #canvas-text h1 {
     margin: 10px;
-    animation: slide-left 0.5s;
     margin-top: 10px; }
 
 @keyframes slide-left {
@@ -119,8 +118,8 @@ a:focus {
   text-align: center;
   background-color: white;
   padding-top: 200px;
-  -webkit-clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
-  clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%); }
+  -webkit-clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 90%);
+  clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 90%); }
   #section2 h1 {
     color: black;
     font-size: 250%; }
@@ -138,7 +137,7 @@ iframe {
   padding-top: 200px;
   height: auto;
   text-align: center;
-  background-color: black;
+  background-color: rgba(25, 25, 25, 0);
   padding-bottom: 150px;
   text-align: center;
   margin-top: -200px;
@@ -335,7 +334,6 @@ iframe {
     max-height: inherit; }
     #canvas-text h1 {
       font-size: 500%;
-      animation: slide-left 1s;
       /*background-image: url(mirage.jpeg);
       background-position: center, right;
       background-size: contain;

@@ -10,13 +10,17 @@ $(function(){ //On page load function
       });
 
       */
+  // ----------------Animate On Scroll------------
 
+  AOS.init({
+    duration: 1200,
+  });
 
   // -----------------FADE IN IMAGE---------------
 
-  $('#canvas-img').ready(function(){
+  /*$('#canvas-img').ready(function(){
     $('#logo').fadeIn(0000);
-  });
+  });*/
 
 
   // --------------------SMOOTH SCROLL----------------------------------------
