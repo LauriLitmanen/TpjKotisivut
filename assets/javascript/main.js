@@ -14,6 +14,7 @@ $(function(){ //On page load function
 
   AOS.init({
     duration: 1200,
+    once: true,
   });
 
   // -----------------FADE IN IMAGE---------------
