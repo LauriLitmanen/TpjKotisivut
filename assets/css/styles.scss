@@ -332,6 +332,31 @@ a:focus {
   }
 }
 
+.show-more-text{
+  margin: 0px;
+  font-size: 100%;
+
+  :hover {
+    cursor: pointer;
+  }
+}
+
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
 .match-item{
 }
 
@@ -653,6 +678,11 @@ li {
   display:none;
   max-width: 100%;
 }
+.show-more-text{
+  
+  cursor: pointer;
+  
+} 
 
 #footer  {
   bottom: 0;

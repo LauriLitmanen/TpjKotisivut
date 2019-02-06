@@ -260,6 +260,26 @@ iframe {
     outline: none;
     box-shadow: 0 4px 8px 0 rgba(60, 60, 60, 0.2), 0 6px 20px 0 rgba(60, 60, 60, 0.19); }
 
+.show-more-text {
+  margin: 0px;
+  font-size: 100%; }
+  .show-more-text :hover {
+    cursor: pointer; }
+
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px; }
+
+.up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg); }
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg); }
+
 .match-info {
   display: none; }
 
@@ -504,6 +524,9 @@ iframe {
   .match-info {
     display: none;
     max-width: 100%; }
+
+  .show-more-text {
+    cursor: pointer; }
 
   #footer {
     bottom: 0; }

@@ -70,6 +70,28 @@ $('.match-list').on('click', '.match-item', function(e){
   $(this).next('.match-info').not('animated').slideToggle();
 
 });
+
+//-------------------------SHOW MORE BUTTON---------------------------------
+function showMore() {
+  var $matches = $('#piilotettu');
+  var $showMoreText = $('.show-more-text');
+  var $arrowUp = $('.up');
+  var $arrowDown = $('.down');
+  
+  if ($matches.is(':hidden')) {
+    $matches.slideDown();
+    $showMoreText.text("Show Less");
+    $arrowDown.hide();
+    $arrowUp.show();
+
+  }
+  else {
+    $matches.slideUp();
+    $showMoreText.text("Show More");
+    $arrowUp.hide();
+    $arrowDown.show();
+  }
+}
 //------------------------- MOBIE NAV --------------------------------------
 function toggleNav() {
   var nav = document.getElementById("mySidenav");
