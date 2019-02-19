@@ -365,7 +365,8 @@ iframe {
   #canvas-text {
     margin-top: 100px;
     overflow: hidden;
-    max-height: inherit; }
+    max-height: inherit;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black; }
     #canvas-text h1 {
       font-size: 500%;
       /*background-image: url(mirage.jpeg);

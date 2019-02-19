@@ -480,6 +480,7 @@ a:focus {
     margin-top: 100px;
     overflow: hidden;
     max-height: inherit;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
     h1 {
       font-size: 500%;
       //animation: slide-left 1s;
@@ -490,6 +491,7 @@ a:focus {
       -webkit-background-clip: text;
       color: transparent;*/
       color: white;
+      
     }
   }
 
