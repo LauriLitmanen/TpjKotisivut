@@ -1,5 +1,23 @@
 $(function(){ //On page load function
 
+
+  $(window)
+
+  //-----------------NAVBAR ONSCROLL------------------
+  
+  window.onscroll = function() {myFunction()};
+
+  var header = document.getElementById("nav-wrapper");
+  var sticky = header.offsetTop;
+  
+  function myFunction() {
+    if (window.pageYOffset > sticky) {
+      header.classList.add("fixed");
+    } else {
+      header.classList.remove("fixed");
+    }
+  }
+
   //------------------TWITCH EMBEDDED-------------------
   /*
   new Twitch.Embed("twitch-embed", {
@@ -10,6 +28,9 @@ $(function(){ //On page load function
       });
 
       */
+
+
+
   // ----------------Animate On Scroll------------
 
   AOS.init({
