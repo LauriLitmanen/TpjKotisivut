@@ -226,7 +226,7 @@ a:focus {
   //margin-right: 125px;
 }
 
-#subsitute-wrap{
+#substitute-wrap{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -714,6 +714,13 @@ a:focus {
       font-size: 150%;
     }
   }
+
+  #substitute-wrap{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 50px;
+  }
 #section4{
   height: auto;
   padding-top: 150px;
@@ -865,6 +872,7 @@ LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SC
     margin-right: 250px;
   }
 
+  
   #standings-content {
     padding: 50px;
   }

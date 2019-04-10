@@ -165,7 +165,7 @@ iframe {
     font-size: 250%;
     color: white; }
 
-#subsitute-wrap {
+#substitute-wrap {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -539,6 +539,12 @@ iframe {
     color: white; }
     .roster-text b {
       font-size: 150%; }
+
+  #substitute-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 50px; }
 
   #section4 {
     height: auto;
