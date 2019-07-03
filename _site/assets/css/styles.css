@@ -1,28 +1,53 @@
-html {
-  font-family: 'Roboto Condensed', sans-serif;
+#banner {
   height: 100vh;
-  margin-bottom: 0;
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
-  overflow-x: hidden;
-  width: 100%;
-  background: url(de_train_sumea.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; }
+  text-align: center;
+  background-color: rgba(25, 25, 25, 0);
+  color: white;
+  padding: 0px;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column; }
 
-body {
-  margin-bottom: 0;
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0; }
+#canvas-img img {
+  height: 300px;
+  width: auto; }
 
-a:hover,
-a:active,
-a:focus {
-  outline: 0; }
+.nuoli {
+  margin-top: 50px;
+  height: auto;
+  width: auto; }
+  .nuoli img {
+    height: 50px;
+    width: 50px; }
+
+.bounce {
+  animation: bounce 2s infinite; }
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0); }
+  40% {
+    transform: translateY(-30px); }
+  60% {
+    transform: translateY(-15px); } }
+@media only screen and (min-width: 769px) {
+  #banner {
+    height: 75vh;
+    text-align: center;
+    background-color: rgba(25, 25, 25, 0);
+    color: white;
+    padding: 0px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+
+  #canvas-img img {
+    width: 450px;
+    height: 450px; } }
+#section1 {
+  display: nope; }
 
 #mobile-nav-btn {
   color: #b3b3b3;
@@ -62,13 +87,6 @@ a:focus {
   margin-left: 50px; }
 
 /*MOBILE NAV MOBILE NAV MOBILE NAV MOBILE NAV MOBILE NAV*/
-#wrapper1 {
-  height: 200vh;
-  display: block; }
-
-#section1 {
-  display: nope; }
-
 #nav-wrapper {
   display: none; }
 
@@ -77,60 +95,62 @@ a:focus {
   height: 130px;
   margin-top: 10px; }
 
-#banner {
-  height: 100vh;
-  text-align: center;
-  background-color: rgba(25, 25, 25, 0);
-  color: white;
-  padding: 0px;
-  padding-top: 20px;
-  display: flex;
-  flex-direction: column; }
+@media only screen and (min-width: 769px) {
+  #section1 {
+    height: 100px;
+    text-align: center;
+    background-color: white;
+    padding-top: 60px;
+    padding-bottom: 60px; }
 
-#logo {
-  width: 200px;
-  height: 200px;
-  padding: 20px;
-  padding-top: 50px; }
+  #mobile-nav-btn {
+    display: none; }
 
-#canvas-img img {
-  height: 300px;
-  width: auto; }
+  #nav-wrapper {
+    font-size: 22px;
+    width: 100%;
+    height: 70px;
+    margin: 0px;
+    padding: 30px;
+    padding-bottom: 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #181818; }
 
-#canvas-text {
-  font-size: 250%;
-  margin-top: 10px;
-  overflow: hidden;
-  height: auto; }
-  #canvas-text h1 {
-    margin: 10px;
+  #nav-content {
+    width: 100%;
+    height: 45px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; }
+
+  #nav-image {
+    width: 130px;
+    height: 130px;
     margin-top: 10px; }
 
-@keyframes slide-left {
-  from {
-    margin-right: 100%;
-    width: 300%; }
-  to {
-    margin-right: 250px;
-    width: 100%; } }
-.nuoli {
-  margin-top: 50px;
-  height: auto;
-  width: auto; }
-  .nuoli img {
-    height: 50px;
-    width: 50px; }
+  .nav {
+    display: block;
+    float: right; }
+    .nav a {
+      text-decoration: none;
+      color: #181818;
+      padding-left: 40px;
+      padding-right: 40px; }
+    .nav :hover {
+      font-style: italic; }
 
-.bounce {
-  animation: bounce 2s infinite; }
-
-@keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
-    transform: translateY(0); }
-  40% {
-    transform: translateY(-30px); }
-  60% {
-    transform: translateY(-15px); } }
+  .fixed {
+    top: 0;
+    z-index: 999;
+    position: fixed;
+    background-color: #fff;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    margin-bottom: 0px; } }
 #section2 {
   height: 70%;
   text-align: center;
@@ -151,6 +171,31 @@ iframe {
   width: 80vw;
   max-height: 700px; }
 
+@media only screen and (min-width: 769px) {
+  #section2 {
+    height: 120vh;
+    text-align: center;
+    background-color: white;
+    padding-top: 60px;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 90%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 90%); }
+    #section2 h1 {
+      color: black;
+      font-size: 250%; }
+
+  #stream-header {
+    padding-top: 50px; }
+
+  #stream-wrap {
+    display: block; }
+
+  iframe {
+    height: 480px;
+    width: 1080px; } }
+@media only screen and (min-width: 1824px) {
+  #twitch-embed iframe {
+    height: 720px;
+    width: 1280px; } }
 #section3 {
   padding-top: 200px;
   height: auto;
@@ -210,6 +255,91 @@ iframe {
   align-items: center;
   align-content: center; }
 
+@media only screen and (min-width: 769px) {
+  #section3 {
+    padding-top: 30px;
+    min-height: auto;
+    text-align: center;
+    background-color: rgba(25, 25, 25, 0);
+    padding-bottom: 10px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 300px;
+    -webkit-clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%); }
+    #section3 h2 {
+      font-size: 250%;
+      padding-top: 100px;
+      color: white; }
+
+  .caster-roster-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center; }
+
+  #substitute-container {
+    margin-right: 125px; }
+
+  #roster-wrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 100px; }
+
+  #caster-wrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px; }
+
+  .roster-item {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px 0 rgba(228, 228, 228, 0.2), 0 6px 20px 0 rgba(183, 183, 183, 0.2);
+    background-color: black;
+    margin: 2vw; }
+
+  #roster {
+    padding: 20px; }
+
+  .roster-image {
+    height: 290px;
+    width: 190px;
+    margin: 0px;
+    padding: 0px;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,0+100;Neutral+Density */
+    background: #fcfff4;
+    /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', endColorstr='#b3bead',GradientType=1 );
+    /* IE6-9 fallback on horizontal gradient */ }
+
+  .roster-text {
+    font-size: 100%;
+    color: white; }
+    .roster-text b {
+      font-size: 150%; }
+
+  #substitute-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 50px; } }
+@media only screen and (min-width: 1824px) {
+  #substitute-container {
+    margin-right: 250px; }
+
+  #standings-content {
+    padding: 50px; } }
 #section4 {
   padding-top: 200px;
   height: auto;
@@ -308,244 +438,7 @@ iframe {
 .match-info {
   display: none; }
 
-#footer {
-  height: auto;
-  text-align: center;
-  background-color: #181818;
-  font-size: 100%;
-  padding: 10px; }
-  #footer a {
-    text-decoration: none;
-    color: white; }
-  #footer p {
-    margin: 0px;
-    color: white;
-    padding: 15px;
-    height: 20px; }
-
-#footer-wrap {
-  text-align: center;
-  height: 100%;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
-  #footer-wrap ul {
-    padding-left: 0px; }
-  #footer-wrap li {
-    list-style: none;
-    margin: 10px 30px;
-    font-size: 20px;
-    padding: 15px 15px;
-    color: #fff;
-    border: 1px solid #fff;
-    border-radius: 50%; }
-
 @media only screen and (min-width: 769px) {
-  #mobile-nav-btn {
-    display: none; }
-
-  #wrapper1 {
-    height: 100%;
-    display: block; }
-
-  #banner {
-    height: 75vh;
-    text-align: center;
-    background-color: rgba(25, 25, 25, 0);
-    color: white;
-    padding: 0px;
-    padding-top: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; }
-
-  #canvas-img img {
-    width: 450px;
-    height: 450px; }
-
-  #logo {
-    width: 420px;
-    height: 420px;
-    float: left;
-    padding: 20px;
-    padding-left: 50px;
-    padding-top: 100px; }
-
-  #canvas-text {
-    margin-top: 100px;
-    overflow: hidden;
-    max-height: inherit;
-    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black; }
-    #canvas-text h1 {
-      font-size: 500%;
-      /*background-image: url(mirage.jpeg);
-      background-position: center, right;
-      background-size: contain;
-      background-clip: text;
-      -webkit-background-clip: text;
-      color: transparent;*/
-      color: white; }
-
-  @keyframes slide-left {
-    from {
-      margin-right: 100%;
-      width: 300%; }
-    to {
-      margin-right: 250px;
-      width: 100%; } }
-  #section1 {
-    height: 100px;
-    text-align: center;
-    background-color: white;
-    padding-top: 60px;
-    padding-bottom: 60px; }
-
-  #nav-wrapper {
-    font-size: 22px;
-    width: 100%;
-    height: 70px;
-    margin: 0px;
-    padding: 30px;
-    padding-bottom: 0px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    border-bottom: 1px solid #181818; }
-
-  #nav-content {
-    width: 100%;
-    height: 45px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center; }
-
-  #nav-image {
-    width: 130px;
-    height: 130px;
-    margin-top: 10px; }
-
-  .nav {
-    display: block;
-    float: right; }
-    .nav a {
-      text-decoration: none;
-      color: #181818;
-      padding-left: 40px;
-      padding-right: 40px; }
-    .nav :hover {
-      font-style: italic; }
-
-  .fixed {
-    top: 0;
-    z-index: 999;
-    position: fixed;
-    background-color: #fff;
-    padding-top: 10px;
-    padding-bottom: 0px;
-    margin-bottom: 0px; }
-
-  #section2 {
-    height: 120vh;
-    text-align: center;
-    background-color: white;
-    padding-top: 60px;
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 90%);
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 90%); }
-    #section2 h1 {
-      color: black;
-      font-size: 250%; }
-
-  #stream-header {
-    padding-top: 50px; }
-
-  #stream-wrap {
-    display: block; }
-
-  iframe {
-    height: 480px;
-    width: 1080px; }
-
-  #section3 {
-    padding-top: 30px;
-    min-height: auto;
-    text-align: center;
-    background-color: rgba(25, 25, 25, 0);
-    padding-bottom: 10px;
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 300px;
-    -webkit-clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
-    clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%); }
-    #section3 h2 {
-      font-size: 250%;
-      padding-top: 100px;
-      color: white; }
-
-  .caster-roster-wrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    align-content: center; }
-
-  #substitute-container {
-    margin-right: 125px; }
-
-  #roster-wrap {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 100px; }
-
-  #caster-wrap {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 50px; }
-
-  .roster-item {
-    display: flex;
-    flex-direction: column;
-    box-shadow: 0 4px 8px 0 rgba(228, 228, 228, 0.2), 0 6px 20px 0 rgba(183, 183, 183, 0.2);
-    background-color: black;
-    margin: 2vw; }
-
-  .roster-image {
-    height: 290px;
-    width: 190px;
-    margin: 0px;
-    padding: 0px;
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,0+100;Neutral+Density */
-    background: #fcfff4;
-    /* Old browsers */
-    background: -moz-linear-gradient(-45deg, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
-    /* FF3.6-15 */
-    background: -webkit-linear-gradient(-45deg, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
-    /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(135deg, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', endColorstr='#b3bead',GradientType=1 );
-    /* IE6-9 fallback on horizontal gradient */ }
-
-  .roster-text {
-    font-size: 100%;
-    color: white; }
-    .roster-text b {
-      font-size: 150%; }
-
-  #substitute-wrap {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-top: 50px; }
-
   #section4 {
     height: auto;
     padding-top: 150px;
@@ -605,8 +498,42 @@ iframe {
     max-width: 100%; }
 
   .show-more-text {
-    cursor: pointer; }
+    cursor: pointer; } }
+#footer {
+  height: auto;
+  text-align: center;
+  background-color: #181818;
+  font-size: 100%;
+  padding: 10px; }
+  #footer a {
+    text-decoration: none;
+    color: white; }
+  #footer p {
+    margin: 0px;
+    color: white;
+    padding: 15px;
+    height: 20px; }
 
+#footer-wrap {
+  text-align: center;
+  height: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  #footer-wrap ul {
+    padding-left: 0px; }
+  #footer-wrap li {
+    list-style: none;
+    margin: 10px 30px;
+    font-size: 20px;
+    padding: 15px 15px;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 50%; }
+
+@media only screen and (min-width: 769px) {
   #footer {
     bottom: 0; }
 
@@ -625,30 +552,38 @@ iframe {
       padding: 16px;
       height: 20px; }
     #footer-wrap li {
-      border: 1px solid #fff; }
+      border: 1px solid #fff; } }
+html {
+  font-family: 'Roboto Condensed', sans-serif;
+  height: 100vh;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  overflow-x: hidden;
+  width: 100%;
+  background: url(de_train_sumea.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
 
-  #roster {
-    padding: 20px; } }
-/* LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS ---
-LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS ---
-LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS ---
-LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS ---
-LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS --- LARGE SCREENS ---  */
-@media only screen and (min-width: 1824px) {
-  #canvas-text {
-    margin-top: 300px; }
+body {
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0; }
 
-  #logo {
-    width: 600px;
-    height: 600px;
-    margin-left: 100px; }
+a:hover,
+a:active,
+a:focus {
+  outline: 0; }
 
-  #twitch-embed iframe {
-    height: 720px;
-    width: 1280px; }
+#wrapper {
+  height: 200vh;
+  display: block; }
 
-  #substitute-container {
-    margin-right: 250px; }
-
-  #standings-content {
-    padding: 50px; } }
+@media only screen and (min-width: 769px) {
+  #wrapper {
+    height: 100%;
+    display: block; } }

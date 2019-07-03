@@ -1,0 +1,66 @@
+
+
+#section2 {
+    height: 70%;
+    text-align: center;
+    background-color: white;
+    padding-top: 200px;
+    -webkit-clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 90%);
+    clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 90%);
+    h1 {
+      color: black;
+      font-size: 250%;
+    }
+  }
+  
+  #stream-wrap {
+    width: 100%;
+    height: auto;
+  }
+    iframe{
+      height: 80vh;
+      width: 80vw;
+      max-height: 700px;
+  
+    }
+
+//---------------DESKTOP-----------------------------
+@media only screen and (min-width: 769px) {
+
+    #section2 {
+        height: 120vh;
+        text-align: center;
+        background-color: white;
+        padding-top: 60px;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 90%);
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 90%);
+        h1 {
+          color: black;
+          font-size: 250%;
+        }
+      }
+    
+      #stream-header {
+        padding-top: 50px;
+      }
+    
+      #stream-wrap {
+        display: block;
+      }
+    
+      iframe {
+        height: 480px;
+        width: 1080px;
+      }
+    
+}
+//----------LARGE SCREENS--------------
+@media only screen  and (min-width : 1824px) {
+
+  #twitch-embed {
+    iframe {
+      height: 720px;
+      width: 1280px;
+    }
+  }
+}

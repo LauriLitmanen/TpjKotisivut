@@ -1,0 +1,134 @@
+
+
+#section1 {
+    display: nope;
+  }
+
+  // MOBILE NAV MOBILE NAV MOBILE NAV MOBILE NAV
+#mobile-nav-btn {
+    color: #b3b3b3;
+    margin: 10px;
+    position: fixed;
+    right: 0;
+    z-index: 1;
+  }
+  
+  .sidenav {
+    background-color: rgba(25,25,25, .7);
+    height: 100%;
+    opacity: 1;
+    overflow-x: hidden;
+    padding-top: 60px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    transition: .2s;
+    width: 0;
+    z-index: 1;
+  
+    a {
+      color: #b3b3b3;
+      display: block;
+      font-size: 25px;
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      transition: .1s;
+      //text-transform: uppercase;
+      //font-weight: bold;
+   }
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+   /*MOBILE NAV MOBILE NAV MOBILE NAV MOBILE NAV MOBILE NAV*/
+
+   #nav-wrapper {
+    display: none;
+  }
+  
+  #nav-image {
+    width: 130px;
+    height: 130px;
+    margin-top: 10px;
+  }
+
+  
+//-------------------------DESKTOP-------------------------
+  @media only screen and (min-width: 769px) {
+    #section1 {
+        height: 100px;
+        text-align: center;
+        background-color: white;
+        padding-top: 60px;
+        padding-bottom: 60px;
+      }
+
+      #mobile-nav-btn {
+        display: none;
+      }
+
+      #nav-wrapper{
+        font-size: 22px;
+        width: 100%;
+        height: 70px;
+        margin: 0px;
+        padding: 30px;
+        padding-bottom: 0px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        border-bottom: 1px solid #181818;
+      }
+    
+      #nav-content {
+        width: 100%;
+        height: 45px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+       
+      }
+      
+      #nav-image {
+        width: 130px;
+        height: 130px;
+        margin-top: 10px;
+      }
+      
+      
+      .nav {
+        display: block;
+        float: right;
+        a {
+          text-decoration: none;
+          color: #181818;
+          padding-left: 40px;
+          padding-right: 40px;
+        }
+        :hover {
+          //text-shadow: 10px -15px white;
+          font-style: italic;
+        }
+      }
+      .fixed {
+        top: 0;
+        z-index: 999;
+        position: fixed;
+        background-color: #fff;
+        padding-top: 10px;
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+        
+      }
+  }
