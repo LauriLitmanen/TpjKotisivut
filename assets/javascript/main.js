@@ -130,7 +130,7 @@ $(function(){ //On page load function
         }
       }
     }
-    xhr.open ('GET', 'http://api.tpj.fi/api/data', true); //#2 Prepare the request
+    xhr.open ('GET', 'https://api.tpj.fi/api/data/results', true); //#2 Prepare the request
     xhr.send(null);                                       //#3 Send the request
 });
 
