@@ -85,7 +85,7 @@ $(function(){ //On page load function
       }
     });
 
-  //-------------------------MATCH LIST JSON AND CREATION------------------------------------------
+  //-------------------------RESULTS LIST JSON AND CREATION------------------------------------------
 
     var xhr = new XMLHttpRequest();                         //#1 create XMLHttpReaquest object
 
@@ -132,8 +132,53 @@ $(function(){ //On page load function
     }
     xhr.open ('GET', 'https://api.tpj.fi/api/data/results', true); //#2 Prepare the request
     xhr.send(null);                                       //#3 Send the request
-});
 
+
+//------------------------ UPCOMING MATCH LIST ---------------------------------------------
+var xhru = new XMLHttpRequest();                         //#1 create XMLHttpReaquest object
+
+xhru.onload =  function() {                              //#4 when readystate changes
+  if(xhru.status == 200) {                               //#5 if server status was OK
+    responseObject = JSON.parse(xhru.responseText);      //convert the string to javascript object and store it to a variable
+    var newMatchUpcoming = '';                           // variable to hold the new HTML data
+    if (responseObject.length == 0) {
+      newMatchUpcoming += '<p><i>No Upcoming Matches :(</i></p>'
+      document.getElementById('upcoming-list').innerHTML = newMatchUpcoming; //add the new HTML data to the page
+    }
+    else {
+      for (var i = 0; i < responseObject.length; i++){                           // loop through first 8 matches
+        if (responseObject[i].upcoming_league == 'FEL') {         // check if the league is FEL , Challengermode or Something else
+          leagueColor = '#2466FF';
+        }
+        else if (responseObject[i].upcoming_league == 'Challengermode') {
+          leagueColor = 'Orange';
+        }
+          else {
+            leagueColor = '#b3b3b3';
+        }
+
+        var matchDay = responseObject[i].upcoming_match_day;
+                                   //constructing the html with the json data
+        newMatchUpcoming += '<li data-aos="flip-right" data-aos-anchor-placement="center-bottom">';
+        newMatchUpcoming += '<button class="match-item" style="background-color:' + leagueColor + ';">';
+        newMatchUpcoming +=  matchDay.slice(8,10) + "."+ matchDay.slice(5,7) + " | " +"TPJ vs " + responseObject[i].upcoming_enemy + " ";
+        newMatchUpcoming += '</button>';
+        newMatchUpcoming += '<div class="match-info"><b>' + "League:" + " " + responseObject[i].upcoming_league + '</b><br>';
+        newMatchUpcoming += '<b>' + "BO: " + responseObject[i].upcoming_bestOf + '</b><br>';
+        newMatchUpcoming += '<b>' + "Match day: " + matchDay.slice(8,10) + "." + matchDay.slice(5,7) + "." + matchDay.slice(0,4) +'</b><br>';
+        newMatchUpcoming += '<b>'+ "Starting time: " + " " + responseObject[i].upcoming_startTime +'</b> <br>';
+        newMatchUpcoming += '<b>'+ "Stage: " + responseObject[i].upcoming_stage +  '</b><br>';
+        newMatchUpcoming += '</div>';
+
+        document.getElementById('upcoming-list').innerHTML = newMatchUpcoming; //add the new HTML data to the page
+      }
+    }
+
+  }
+}
+xhru.open ('GET', 'https://api.tpj.fi/api/data/upcoming', true); //#2 Prepare the request
+xhru.send(null);                                       //#3 Send the request
+});
 //------------------------ MATCH LIST MORE INFO --------------------------------------------
 $('.match-list').on('click', '.match-item', function(e){
   e.preventDefault();
