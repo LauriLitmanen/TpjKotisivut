@@ -12,7 +12,7 @@
       font-size: 250%;
     }
   }
-  
+
   #stream-wrap {
     width: 100%;
     height: auto;
@@ -21,7 +21,7 @@
       height: 80vh;
       width: 80vw;
       max-height: 700px;
-  
+
     }
 
 //---------------DESKTOP-----------------------------
@@ -39,20 +39,20 @@
           font-size: 250%;
         }
       }
-    
+
       #stream-header {
         padding-top: 50px;
       }
-    
+
       #stream-wrap {
         display: block;
       }
-    
+
       iframe {
         height: 480px;
         width: 1080px;
       }
-    
+
 }
 //----------LARGE SCREENS--------------
 @media only screen  and (min-width : 1824px) {
