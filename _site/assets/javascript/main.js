@@ -140,7 +140,8 @@ var xhru = new XMLHttpRequest();                         //#1 create XMLHttpReaq
 xhru.onload =  function() {                              //#4 when readystate changes
   if(xhru.status == 200) {                               //#5 if server status was OK
     responseObject = JSON.parse(xhru.responseText);      //convert the string to javascript object and store it to a variable
-    var newMatchUpcoming = '';                           // variable to hold the new HTML data
+    var newMatchUpcoming = '';
+    var upcoming = '';                       // variable to hold the new HTML data
     if (responseObject.length == 0) {
       newMatchUpcoming += '<p><i>No Upcoming Matches :(</i></p>'
       document.getElementById('upcoming-list').innerHTML = newMatchUpcoming; //add the new HTML data to the page
@@ -159,6 +160,18 @@ xhru.onload =  function() {                              //#4 when readystate c
 
         var matchDay = responseObject[i].upcoming_match_day;
                                    //constructing the html with the json data
+        /*
+        newMatchUpcoming += '<li data-aos="flip-right" data-aos-anchor-placement="center-bottom">';
+        newMatchUpcoming += '<button class="match-item" style="background-color:' + leagueColor + ';">';
+        newMatchUpcoming +=  matchDay.slice(8,10) + "."+ matchDay.slice(5,7) + " | " +"TPJ vs " + responseObject[i].upcoming_enemy + " ";
+        newMatchUpcoming += '</button>';
+        newMatchUpcoming += '<div class="match-info"><b>' + "League:" + " " + responseObject[i].upcoming_league + '</b><br>';
+        newMatchUpcoming += '<b>' + "BO: " + responseObject[i].upcoming_bestOf + '</b><br>';
+        newMatchUpcoming += '<b>' + "Match day: " + matchDay.slice(8,10) + "." + matchDay.slice(5,7) + "." + matchDay.slice(0,4) +'</b><br>';
+        newMatchUpcoming += '<b>'+ "Starting time: " + " " + responseObject[i].upcoming_startTime +'</b> <br>';
+        newMatchUpcoming += '<b>'+ "Stage: " + responseObject[i].upcoming_stage +  '</b><br>';
+        newMatchUpcoming += '</div>';
+        */
         newMatchUpcoming += '<li data-aos="flip-right" data-aos-anchor-placement="center-bottom">';
         newMatchUpcoming += '<button class="match-item" style="background-color:' + leagueColor + ';">';
         newMatchUpcoming +=  matchDay.slice(8,10) + "."+ matchDay.slice(5,7) + " | " +"TPJ vs " + responseObject[i].upcoming_enemy + " ";
@@ -170,8 +183,13 @@ xhru.onload =  function() {                              //#4 when readystate c
         newMatchUpcoming += '<b>'+ "Stage: " + responseObject[i].upcoming_stage +  '</b><br>';
         newMatchUpcoming += '</div>';
 
-        document.getElementById('upcoming-list').innerHTML = newMatchUpcoming; //add the new HTML data to the page
+
+        upcoming = newMatchUpcoming + upcoming;
+        newMatchUpcoming = '';
+
+
       }
+      document.getElementById('upcoming-list').innerHTML = upcoming; //add the new HTML data to the page
     }
 
   }
