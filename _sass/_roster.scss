@@ -6,38 +6,40 @@
     text-align: center;
     //background-color: black;
     background-color: rgba(25,25,25, .0);
-    padding-bottom: 150px;
+    padding-bottom: 200px;
     text-align: center;
     margin-top: -200px;
     -webkit-clip-path: polygon(0 0, 100% 3%, 100% 100%, 0 100%);
     clip-path: polygon(0 0, 100% 3%, 100% 100%, 0 100%);
-  
+
     h2 {
       font-size: 250%;
       color: white;
+      margin: 10px;
     }
   }
-  
-  
-  
+
+
+
   #substitute-container {
     //margin-right: 125px;
   }
-  
+
   #substitute-wrap{
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-top: 50px;
   }
-  
+
   #roster-wrap{
     display: flex;
-    flex-direction: column;
+    //flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
-    margin-top: 100px;
+    margin-top: 20px;
   }
-  
+
   #caster-container {
   }
   #caster-wrap {
@@ -46,47 +48,54 @@
     justify-content: center;
     margin-top: 30px;
   }
-  
+
   .roster-item {
     display: flex;
     flex-direction: column;
-    margin: 20px;
+    margin: 10px;
     align-items: center;
     justify-content: center;
-  
+
   }
-  
+
   .roster-image{
-    background-color: white;
+    background-color: transparent;
     height: 290px;
     width: 190px;
     margin: 10px;
     margin-bottom: 10px;
     //padding: 20px;
-  
+
+    img {
+      border-radius: 30px;
+    }
+
   }
-  
+
   .roster-text {
-    font-size: 70%;
+    font-size: 20px;
     color: white;
-  
+    p {
+      margin: 5px;
+    }
+
     b{
       font-size: 150%;
     }
   }
-  
+
   .caster-roster-wrapper {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     align-content: center;
-  
+
   }
 
 //---------------DESKTOP-----------------------------
 @media only screen and (min-width: 769px) {
- 
+
     #section3 {
         padding-top: 30px;
         min-height: auto;
@@ -97,9 +106,9 @@
         text-align: center;
         margin-top: 20px;
         margin-bottom: 300px;
-    
-        
-    
+
+
+
         -webkit-clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
         clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
         h2 {
@@ -115,11 +124,11 @@
         align-items: center;
         align-content: center;
       }
-    
+
       #substitute-container {
         margin-right: 125px;
       }
-    
+
       #roster-wrap{
         display: flex;
         flex-direction: row;
@@ -127,7 +136,7 @@
         justify-content: center;
         margin-top: 100px
       }
-    
+
       #caster-wrap{
         display: flex;
         flex-direction: row;
@@ -135,7 +144,7 @@
         justify-content: center;
         margin-top: 50px;
       }
-    
+
       .roster-item {
         display: flex;
         flex-direction: column;
@@ -150,13 +159,17 @@
       #roster  {
         padding: 20px;
        }
-    
+
       .roster-image{
         height: 290px;
         width: 190px;
         margin: 0px;
         padding: 0px;
         .cover {
+        }
+
+        img{
+          border-radius: 0;
         }
         /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,0+100;Neutral+Density */
         background: rgb(252,255,244); /* Old browsers */
@@ -165,7 +178,7 @@
         background: linear-gradient(135deg, rgba(252,255,244,1) 0%,rgba(223,229,215,1) 40%,rgba(179,190,173,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', endColorstr='#b3bead',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
       }
-    
+
       .roster-text {
         font-size: 100%;
         color: white;
@@ -173,7 +186,7 @@
           font-size: 150%;
         }
       }
-    
+
       #substitute-wrap{
         display: flex;
         flex-direction: row;
@@ -186,8 +199,8 @@
     #substitute-container {
         margin-right: 250px;
       }
-    
-      
+
+
       #standings-content {
         padding: 50px;
       }

@@ -210,10 +210,16 @@ function showMore() {
 //------------------------- MOBIE NAV --------------------------------------
 function toggleNav() {
   var nav = document.getElementById("mySidenav");
-  if (nav.style.width == "250px") {
-    nav.style.width = "0";
+  if (nav.style.height == "100%") {
+    nav.style.height = "0";
   }
   else {
-    nav.style.width = "250px";
+    nav.style.height = "100%";
   }
+}
+
+//------------------------- Hide Mobile Nav --------------------------------
+function hideNav(){
+  var nav = document.getElementById("mySidenav");
+  nav.style.height = "0";
 }

@@ -1,10 +1,11 @@
 
 
 #section2 {
-    height: 70%;
+    height: auto;
     text-align: center;
     background-color: white;
-    padding-top: 200px;
+    padding-top: 50px;
+    padding-bottom: 150px;
     -webkit-clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 90%);
     clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 90%);
     h1 {
@@ -18,8 +19,8 @@
     height: auto;
   }
     iframe{
-      height: 80vh;
-      width: 80vw;
+      height: 185px;
+      width: 329px;
       max-height: 700px;
 
     }

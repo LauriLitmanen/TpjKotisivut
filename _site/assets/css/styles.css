@@ -10,14 +10,20 @@
 @keyframes bounce { 0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
   40% { transform: translateY(-30px); }
   60% { transform: translateY(-15px); } }
+.hide-desktop { display: flex; flex-direction: column; overflow-x: hidden; font-size: 60px; margin-top: 20px; align-items: center; justify-content: center; font-family: 'Faster One', 'Roboto Condensed', sans-serif; }
+.hide-desktop p { margin: 5px; }
+
 @media only screen and (min-width: 769px) { #banner { height: 75vh; text-align: center; background-color: rgba(25, 25, 25, 0); color: white; padding: 0px; padding-top: 20px; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+  .hide-desktop { display: none; }
   #canvas-img img { width: 450px; height: 450px; } }
 #section1 { display: nope; }
 
 #mobile-nav-btn { color: #b3b3b3; margin: 10px; position: fixed; right: 0; z-index: 1; }
 
-.sidenav { background-color: rgba(25, 25, 25, 0.7); height: 100%; opacity: 1; overflow-x: hidden; padding-top: 60px; position: fixed; right: 0; top: 0; transition: .2s; width: 0; z-index: 1; }
-.sidenav a { color: #b3b3b3; display: block; font-size: 25px; padding: 8px 8px 8px 32px; text-decoration: none; transition: .1s; }
+.sidenav { background-color: rgba(25, 25, 25, 0.8); height: 0px; width: 100%; opacity: 1; overflow-x: hidden; overflow-y: hidden; text-align: center; position: fixed; right: 0; top: 0; transition: .1s; z-index: 1; }
+.sidenav a { color: #b3b3b3; display: block; font-size: 25px; padding: 10px; text-decoration: none; transition: .1s; }
+
+.mobile-nav-wrapper { padding-top: 80px; }
 
 .sidenav a:hover { color: #f1f1f1; }
 
@@ -37,12 +43,12 @@
   .nav a { text-decoration: none; color: #181818; padding-left: 40px; padding-right: 40px; }
   .nav :hover { font-style: italic; }
   .fixed { top: 0; z-index: 999; position: fixed; background-color: #fff; padding-top: 10px; padding-bottom: 0px; margin-bottom: 0px; } }
-#section2 { height: 70%; text-align: center; background-color: white; padding-top: 200px; -webkit-clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 90%); clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 90%); }
+#section2 { height: auto; text-align: center; background-color: white; padding-top: 50px; padding-bottom: 150px; -webkit-clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 90%); clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 90%); }
 #section2 h1 { color: black; font-size: 250%; }
 
 #stream-wrap { width: 100%; height: auto; }
 
-iframe { height: 80vh; width: 80vw; max-height: 700px; }
+iframe { height: 185px; width: 329px; max-height: 700px; }
 
 @media only screen and (min-width: 769px) { #section2 { height: 120vh; text-align: center; background-color: white; padding-top: 60px; -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 90%); clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 90%); }
   #section2 h1 { color: black; font-size: 250%; }
@@ -50,20 +56,22 @@ iframe { height: 80vh; width: 80vw; max-height: 700px; }
   #stream-wrap { display: block; }
   iframe { height: 480px; width: 1080px; } }
 @media only screen and (min-width: 1824px) { #twitch-embed iframe { height: 720px; width: 1280px; } }
-#section3 { padding-top: 200px; height: auto; text-align: center; background-color: rgba(25, 25, 25, 0); padding-bottom: 150px; text-align: center; margin-top: -200px; -webkit-clip-path: polygon(0 0, 100% 3%, 100% 100%, 0 100%); clip-path: polygon(0 0, 100% 3%, 100% 100%, 0 100%); }
-#section3 h2 { font-size: 250%; color: white; }
+#section3 { padding-top: 200px; height: auto; text-align: center; background-color: rgba(25, 25, 25, 0); padding-bottom: 200px; text-align: center; margin-top: -200px; -webkit-clip-path: polygon(0 0, 100% 3%, 100% 100%, 0 100%); clip-path: polygon(0 0, 100% 3%, 100% 100%, 0 100%); }
+#section3 h2 { font-size: 250%; color: white; margin: 10px; }
 
 #substitute-wrap { display: flex; flex-direction: column; justify-content: center; margin-top: 50px; }
 
-#roster-wrap { display: flex; flex-direction: column; justify-content: center; margin-top: 100px; }
+#roster-wrap { display: flex; flex-wrap: wrap; justify-content: center; margin-top: 20px; }
 
 #caster-wrap { display: flex; flex-direction: column; justify-content: center; margin-top: 30px; }
 
-.roster-item { display: flex; flex-direction: column; margin: 20px; align-items: center; justify-content: center; }
+.roster-item { display: flex; flex-direction: column; margin: 10px; align-items: center; justify-content: center; }
 
-.roster-image { background-color: white; height: 290px; width: 190px; margin: 10px; margin-bottom: 10px; }
+.roster-image { background-color: transparent; height: 290px; width: 190px; margin: 10px; margin-bottom: 10px; }
+.roster-image img { border-radius: 30px; }
 
-.roster-text { font-size: 70%; color: white; }
+.roster-text { font-size: 20px; color: white; }
+.roster-text p { margin: 5px; }
 .roster-text b { font-size: 150%; }
 
 .caster-roster-wrapper { display: flex; flex-direction: column; justify-content: center; align-items: center; align-content: center; }
@@ -77,12 +85,13 @@ iframe { height: 80vh; width: 80vw; max-height: 700px; }
   .roster-item { display: flex; flex-direction: column; box-shadow: 0 4px 8px 0 rgba(228, 228, 228, 0.2), 0 6px 20px 0 rgba(183, 183, 183, 0.2); background-color: black; margin: 2vw; }
   #roster { padding: 20px; }
   .roster-image { height: 290px; width: 190px; margin: 0px; padding: 0px; /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,0+100;Neutral+Density */ background: #fcfff4; /* Old browsers */ background: -moz-linear-gradient(-45deg, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%); /* FF3.6-15 */ background: -webkit-linear-gradient(-45deg, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%); /* Chrome10-25,Safari5.1-6 */ background: linear-gradient(135deg, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', endColorstr='#b3bead',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */ }
+  .roster-image img { border-radius: 0; }
   .roster-text { font-size: 100%; color: white; }
   .roster-text b { font-size: 150%; }
   #substitute-wrap { display: flex; flex-direction: row; justify-content: center; margin-top: 50px; } }
 @media only screen and (min-width: 1824px) { #substitute-container { margin-right: 250px; }
   #standings-content { padding: 50px; } }
-#section4 { padding-top: 200px; height: auto; text-align: center; background-color: white; padding-top: 50px; padding-bottom: 10px; text-align: center; margin-top: -210px; -webkit-clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%); clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%); }
+#section4 { padding-top: 150px; height: auto; text-align: center; background-color: white; padding-bottom: 10px; text-align: center; margin-top: -210px; -webkit-clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%); clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%); }
 #section4 h1 { font-size: 250%; padding-top: 50px; }
 
 .matches-content { display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start; align-content: flex-start; text-align: center; font-size: 13px; }
@@ -96,7 +105,7 @@ iframe { height: 80vh; width: 80vw; max-height: 700px; }
 #results { display: inline-block; text-align: center; width: 100%; height: 100%; top: 0; }
 
 .match-list { list-style-type: none; outline: none; text-align: center; padding-left: 0; }
-.match-list button { all: unset; width: 80%; height: 2em; background-color: #EAE9E9; padding: 10px; padding-bottom: 20px; margin: 5px; margin-bottom: 20px; outline: none; box-shadow: 0 4px 8px 0 rgba(60, 60, 60, 0.2), 0 6px 20px 0 rgba(60, 60, 60, 0.19); }
+.match-list button { all: unset; width: 80%; height: 2em; background-color: #EAE9E9; padding: 10px; padding-bottom: 20px; margin: 5px; margin-bottom: 20px; outline: none; box-shadow: 0 4px 8px 0 rgba(60, 60, 60, 0.2), 0 6px 20px 0 rgba(60, 60, 60, 0.19); border-radius: 10px; }
 
 .show-more-container { width: auto; height: 75px; text-align: center; }
 .show-more-container :hover { cursor: pointer; }

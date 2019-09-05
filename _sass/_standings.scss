@@ -1,11 +1,10 @@
 
 
 #section4{
-    padding-top: 200px;
+    padding-top: 150px;
     height: auto;
     text-align: center;
     background-color: white;
-    padding-top: 50px;
     padding-bottom: 10px;
     text-align: center;
     margin-top: -210px;
@@ -16,7 +15,7 @@
       padding-top: 50px;
     }
   }
-  
+
   .matches-content {
    display: flex;
    flex-direction: column;
@@ -26,14 +25,14 @@
    text-align: center;
    font-size: 13px;
   }
-  
+
   .color-codes{
     display: flex;
     flex-direction: row;
     align-items:baseline;
     justify-content:center;
   }
-  
+
   .square{
     height: 16px;
     width: 16px;
@@ -41,7 +40,7 @@
     margin-left: 20px;
     margin-right: 2px;
   }
-  
+
   #upcoming {
     display: inline-block;
     text-align: center;
@@ -49,7 +48,7 @@
     height: 100%;
     top: 0;
   }
-  
+
   #results{
     display: inline-block;
     text-align: center;
@@ -57,7 +56,7 @@
     height: 100%;
     top: 0;
   }
-  
+
   .match-list{
     list-style-type: none;
     outline: none;
@@ -74,40 +73,42 @@
       margin-bottom: 20px;
       outline: none;
       box-shadow: 0 4px 8px 0 rgba(60, 60, 60, 0.2), 0 6px 20px 0 rgba(60, 60, 60, 0.19);
-  
+
+      border-radius: 10px;
+
       :hover{
         //box-shadow: 0 4px 8px 0 rgba(130, 130, 130, 0.2), 0 6px 20px 0 rgba(130, 130, 130, 0.19);
       }
     }
   }
-  
+
   .show-more-container {
     width: auto;
     height: 75px;
     text-align: center;
-  
+
     :hover {
       cursor: pointer;
     }
   }
-  
+
   .show-more-text{
     margin: 0px;
     font-size: 100%;
-  
+
     :hover {
       cursor: pointer;
     }
-    
+
   }
-  
+
   .arrow {
     border: solid black;
     border-width: 0 3px 3px 0;
     display: inline-block;
     padding: 3px;
   }
-  
+
   .up {
     transform: rotate(-135deg);
     -webkit-transform: rotate(-135deg);
@@ -116,10 +117,10 @@
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
   }
-  
+
   .match-item{
   }
-  
+
   .match-info{
     display:none;
   }
@@ -147,7 +148,7 @@
         padding-top: 100px;
       }
       #matches-header{
-      
+
       }
       .matches-content {
        display: flex;
@@ -157,26 +158,26 @@
        align-content: flex-start;
        font-size: 16px;
       }
-      
+
       #upcoming {
         display: inline-block;
         width: 48%;
         height: 100%;
         top: 0;
       }
-      
+
       #results{
         display: inline-block;
         width: 48%;
         height: 100%;
         top: 0;
-      
+
       }
-      
+
       .match-list{
         list-style-type: none;
         outline: none;
-      
+
         button {
           all: unset;
           width: 80%;
@@ -191,21 +192,21 @@
           }
         }
       }
-      
+
       li {
         cursor: pointer;
       }
-      
+
       .match-item{
       }
-      
+
       .match-info{
         display:none;
         max-width: 100%;
       }
       .show-more-text{
-      
+
         cursor: pointer;
-      
+
       }
 }

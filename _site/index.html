@@ -22,6 +22,7 @@
   <title>TPJ | TPJ Gaming Community</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet"> <!-- font -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> <!--Animate on scroll -->
+  <link href="https://fonts.googleapis.com/css?family=Faster+One&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> <!--font awesome -->
   <link rel="stylesheet" href="/assets/css/styles.css">
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
@@ -35,11 +36,13 @@
 
   <div id="mySidenav" class="sidenav">
       <!--<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>-->
-      <a href="#banner">Home</a>
-      <a href="#stream-header">Stream</a>
-      <a href="#roster-header">Roster</a>
-      <a href="#leagues-header">Matches</a>
-      <a href="#footer">Contact Us</a>
+      <div class="mobile-nav-wrapper">
+        <a href="#banner" onclick="hideNav()">Home</a>
+        <a href="#stream-header" onclick="hideNav()">Stream</a>
+        <a href="#roster-header" onclick="hideNav()">Roster</a>
+        <a href="#leagues-header" onclick="hideNav()">Matches</a>
+        <a href="#footer" onclick="hideNav()">Contact Us</a>
+      </div>
     </div>
 
     <span id="mobile-nav-btn" style="font-size:30px;cursor:pointer" onclick="toggleNav()">&#9776;</span>
@@ -49,7 +52,13 @@
   <div id="wrapper">
     <div id="banner">
       <div id="canvas-img"  data-aos="fade-in"><img src="assets/images/tpj_logo1.png" alt=""></div>
-      <div class="nuoli bounce" data-aos="fade-in" data-aos-delay="1500"><img id="nuoli-img" src="assets/images/nuoli_valkoinen.png" alt=""></div>
+      <div class="hide-desktop">
+        <p class="first-text" data-aos="fade-right" data-aos-duration="500">T</p>
+        <p class="second-text" data-aos="fade-right" data-aos-delay="300" data-aos-duration="500">P</p>
+        <p class="third-text" data-aos="fade-right" data-aos-delay="600" data-aos-duration="500" data-aos-offset="-100">J</p>
+      </div>
+      <div class="nuoli bounce" data-aos="fade-in" data-aos-delay="1500" data-aos-offset="-100"><img id="nuoli-img" src="assets/images/nuoli_valkoinen.png" alt=""></div>
+
     </div>
 
     <div id="section1">
