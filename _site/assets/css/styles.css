@@ -47,7 +47,7 @@
   .nav a { text-decoration: none; color: #181818; padding-left: 40px; padding-right: 40px; }
   .nav :hover { font-style: italic; }
   .fixed { top: 0; z-index: 999; position: fixed; background-color: #fff; padding-top: 10px; padding-bottom: 0px; margin-bottom: 0px; } }
-#section2 { margin-top: -30px; height: auto; text-align: center; background-color: #111217; padding-top: 50px; padding-bottom: 150px; /*-webkit-clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 90%);
+#section2 { margin-top: -250px; height: auto; text-align: center; background: linear-gradient(0deg, #111217 65%, rgba(17, 18, 23, 0) 100%); padding-top: 210px; padding-bottom: 150px; /*-webkit-clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 90%);
 clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 90%);*/ }
 #section2 h1 { color: white; font-size: 250%; }
 
@@ -55,7 +55,7 @@ clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 90%);*/ }
 
 iframe { height: 185px; width: 329px; max-height: 700px; }
 
-@media only screen and (min-width: 768px) { #section2 { height: 120vh; text-align: center; background-color: white; padding-top: 60px; -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 90%); clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 90%); margin-top: 0px; }
+@media only screen and (min-width: 768px) { #section2 { height: 120vh; text-align: center; background: none; background-color: white; padding-top: 60px; -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 90%); clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 90%); margin-top: 0px; }
   #section2 h1 { color: black; font-size: 250%; }
   #stream-header { padding-top: 50px; }
   #stream-wrap { display: block; }

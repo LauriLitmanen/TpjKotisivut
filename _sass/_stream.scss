@@ -1,11 +1,11 @@
 
 
 #section2 {
-    margin-top: -30px;
+    margin-top: -250px;
     height: auto;
     text-align: center;
-    background-color: #111217;
-    padding-top: 50px;
+    background: linear-gradient(0deg, rgba(17,18,23,1) 65%, rgba(17,18,23,0) 100%);
+    padding-top: 210px;
     padding-bottom: 150px;
     /*-webkit-clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 90%);
     clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 90%);*/
@@ -32,6 +32,7 @@
     #section2 {
         height: 120vh;
         text-align: center;
+        background: none;
         background-color: white;
         padding-top: 60px;
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 90%);
