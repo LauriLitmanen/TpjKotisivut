@@ -101,10 +101,19 @@ $(function(){ //On page load function
               matchColor = 'lightcoral';
             }
          
-                                                      
+          if (responseObject[i].league == 'FEL'){
+            liiga = 'FEL';
+          }              
+          else if (responseObject[i].league == 'Challengermode') {
+            liiga = 'Challengermode';
+          }
+          else {
+            liiga = 'Other';
+          }                          
+
           newMatchResult += '<li data-aos="flip-right" data-aos-anchor-placement="center-bottom">'; //constructing the html with the json data
-          newMatchResult += '<button class="match-item" style="background-color:' + matchColor + ';">';
-          newMatchResult += responseObject[i].league + "BO" + responseObject[i].bestOf + " " + "TPJ vs " + responseObject[i].enemy + " " + responseObject[i].score;
+          newMatchResult += '<button class="match-item" style="background:' + matchColor + ' url(assets/images/' +liiga+ '.png); background-position: 10px 15px; background-repeat: no-repeat; background-size: 25px">';
+          newMatchResult += "BO" + responseObject[i].bestOf + " " + "TPJ vs " + responseObject[i].enemy + " " + responseObject[i].score;
           newMatchResult += '</button>';
           newMatchResult += '<div class="match-info" style="background-image: url(assets/images/' + responseObject[i].mapOne.split(" ", 1) +  '.jpg);">';
           newMatchResult += '<h3>' + responseObject[i].mapOne +  '</h3>'+'</div>';
@@ -135,9 +144,22 @@ $(function(){ //On page load function
             else {
               matchColor = 'lightcoral';
           }                                                 //constructing the html with the json data
+          if (responseObject[i].league == 'FEL'){
+            liiga = 'FEL';
+          }              
+          else if (responseObject[i].league == 'Challengermode') {
+            liiga = 'NEL';
+          }
+          else if (responseObject[i].league == 'NEL') {
+            liiga = 'NEL';
+          }
+          else {
+            liiga = 'Other';
+          }                          
+
           newMatchResult += '<li data-aos="flip-right" data-aos-anchor-placement="center-bottom">'; //constructing the html with the json data
-          newMatchResult += '<button class="match-item" style="background-color:' + matchColor + ';">';
-          newMatchResult += responseObject[i].league + "BO" + responseObject[i].bestOf + " " + "TPJ vs " + responseObject[i].enemy + " " + responseObject[i].score;
+          newMatchResult += '<button class="match-item" style="background:' + matchColor + ' url(assets/images/' +liiga+ '.png); background-position: 10px 15px; background-repeat: no-repeat; background-size: 25px">';
+          newMatchResult += "BO" + responseObject[i].bestOf + " " + "TPJ vs " + responseObject[i].enemy + " " + responseObject[i].score;
           newMatchResult += '</button>';
           newMatchResult += '<div class="match-info" style="background-image: url(assets/images/' + responseObject[i].mapOne.split(" ", 1) +  '.jpg);">';
           newMatchResult += '<h3>' + responseObject[i].mapOne +  '</h3>'+'</div>';
@@ -203,10 +225,10 @@ xhru.onload =  function() {                              //#4 when readystate c
         newMatchUpcoming += '</div>';
         */
         newMatchUpcoming += '<li data-aos="flip-right" data-aos-anchor-placement="center-bottom">';
-        newMatchUpcoming += '<button class="match-item" style="background-color:' + leagueColor + ';">';
+        newMatchUpcoming += '<button class="match-item" style="background:' + leagueColor + ' url(assets/images/' +responseObject[i].upcoming_league+ '.png); background-position: 10px 15px; background-repeat: no-repeat; background-size: 20px">';
         newMatchUpcoming +=  matchDay.slice(8,10) + "."+ matchDay.slice(5,7) + " | " +"TPJ vs " + responseObject[i].upcoming_enemy + " ";
         newMatchUpcoming += '</button>';
-        newMatchUpcoming += '<div class="match-info" style="background-image: url(assets/images/' + responseObject[i].upcoming_league.split(" ", 1) +  '.png);">';
+        newMatchUpcoming += '<div class="match-info upcoming">';
         newMatchUpcoming += '<b>' + "League:" + " " + responseObject[i].upcoming_league + '</b><br>';
         newMatchUpcoming += '<b>' + "BO: " + responseObject[i].upcoming_bestOf + '</b><br>';
         newMatchUpcoming += '<b>' + "Match day: " + matchDay.slice(8,10) + "." + matchDay.slice(5,7) + "." + matchDay.slice(0,4) +'</b><br>';
