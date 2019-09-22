@@ -1,15 +1,16 @@
 
 
 #section2 {
+    margin-top: -30px;
     height: auto;
     text-align: center;
-    background-color: white;
+    background-color: #111217;
     padding-top: 50px;
     padding-bottom: 150px;
-    -webkit-clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 90%);
-    clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 90%);
+    /*-webkit-clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 90%);
+    clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 90%);*/
     h1 {
-      color: black;
+      color: white;
       font-size: 250%;
     }
   }
@@ -26,7 +27,7 @@
     }
 
 //---------------DESKTOP-----------------------------
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 768px) {
 
     #section2 {
         height: 120vh;
@@ -35,6 +36,7 @@
         padding-top: 60px;
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 90%);
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 90%);
+        margin-top: 0px;
         h1 {
           color: black;
           font-size: 250%;

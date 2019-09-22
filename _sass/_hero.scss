@@ -20,7 +20,7 @@
   }
 
   .nuoli {
-    margin-top: 50px;
+    margin-top: 30%;
     height: auto;
     width: auto;
 
@@ -56,11 +56,19 @@
     align-items: center;
     justify-content: center;
     font-family:'Faster One', 'Roboto Condensed', sans-serif;
+    height: auto;
     //font-weight: bold;
      p {
        margin: 5px;
      }
 
+  }
+  .sumennus{
+    width: 100%;
+    height: 300px;
+    background: linear-gradient(0deg, rgba(17,18,23,1) 10%, rgba(238,238,238,0) 100%);
+    position: absolute;
+    bottom: 0;
   }
   .first-text {
 
@@ -70,7 +78,7 @@
   }
 
   //----------------------------------------------------- DESKTOP --------------------------------------
-  @media only screen and (min-width: 769px) {
+  @media only screen and (min-width: 768px) {
     #banner {
         height: 75vh;
         text-align: center;
@@ -87,6 +95,10 @@
 
       .hide-desktop {
         display: none;
+      }
+
+      .nuoli {
+        margin-top: 50px; 
       }
 
 

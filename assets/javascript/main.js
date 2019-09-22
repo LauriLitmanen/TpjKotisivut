@@ -99,18 +99,35 @@ $(function(){ //On page load function
           }
             else {
               matchColor = 'lightcoral';
-          }                                                //constructing the html with the json data
-          newMatchResult += '<li data-aos="flip-right" data-aos-anchor-placement="center-bottom">';
+            }
+         
+                                                      
+          newMatchResult += '<li data-aos="flip-right" data-aos-anchor-placement="center-bottom">'; //constructing the html with the json data
           newMatchResult += '<button class="match-item" style="background-color:' + matchColor + ';">';
-          newMatchResult += "BO" + responseObject[i].bestOf + " " + "TPJ vs " + responseObject[i].enemy + " " + responseObject[i].score;
+          newMatchResult += responseObject[i].league + "BO" + responseObject[i].bestOf + " " + "TPJ vs " + responseObject[i].enemy + " " + responseObject[i].score;
           newMatchResult += '</button>';
-          newMatchResult += '<div class="match-info"><b>' + responseObject[i].league + '</b><br>';
-          newMatchResult += responseObject[i].mapOne + '<br>' + responseObject[i].mapTwo + '<br>' + responseObject[i].mapThree + '<br>';
-          newMatchResult += '</div>';
-
+          newMatchResult += '<div class="match-info" style="background-image: url(assets/images/' + responseObject[i].mapOne.split(" ", 1) +  '.jpg);">';
+          newMatchResult += '<h3>' + responseObject[i].mapOne +  '</h3>'+'</div>';
+          var words = responseObject[i].mapOne.split(" ");
+          var firstWord = words[0];
+          var secondWord = words[1];
+          if (firstWord != 'Forfeit' && secondWord != 'Forfeit' ) {
+            if (responseObject[i].bestOf >= 2) {
+              newMatchResult += '<div class="match-info" style="background-image: url(assets/images/' + responseObject[i].mapTwo.split(" ", 1) +  '.jpg);">';
+              newMatchResult += '<h3>' + responseObject[i].mapTwo +  '</h3>'+'</div>';
+            }
+            if (responseObject[i].bestOf >= 3) {
+              newMatchResult += '<div class="match-info" style="background-image: url(assets/images/' + responseObject[i].mapThree.split(" ", 1) +  '.jpg);">';
+              newMatchResult += '<h3>' + responseObject[i].mapThree +  '</h3>'+'</div>';
+            }
+          }
+          var words = '';
+          
           document.getElementById('results-list').innerHTML = newMatchResult; //add the new HTML data to the page
         }
+        
         var newMatchResult = '';                            // clear data
+
         for (var i = 8; i < responseObject.length; i++) {   //loop trough the rest of the matches
           if (responseObject[i].outCome == 'win') {         // check if the outCome is win or loss
             matchColor = 'chartreuse';
@@ -118,13 +135,26 @@ $(function(){ //On page load function
             else {
               matchColor = 'lightcoral';
           }                                                 //constructing the html with the json data
-          newMatchResult += '<li data-aos="flip-right" data-aos-anchor-placement="center-bottom">';
+          newMatchResult += '<li data-aos="flip-right" data-aos-anchor-placement="center-bottom">'; //constructing the html with the json data
           newMatchResult += '<button class="match-item" style="background-color:' + matchColor + ';">';
-          newMatchResult += "BO" + responseObject[i].bestOf + " " + "TPJ vs " + responseObject[i].enemy + " " + responseObject[i].score;
+          newMatchResult += responseObject[i].league + "BO" + responseObject[i].bestOf + " " + "TPJ vs " + responseObject[i].enemy + " " + responseObject[i].score;
           newMatchResult += '</button>';
-          newMatchResult += '<div class="match-info"><b>' + responseObject[i].league + '</b><br>';
-          newMatchResult += responseObject[i].mapOne + '<br>' + responseObject[i].mapTwo + '<br>' + responseObject[i].mapThree + '<br>';
-          newMatchResult += '</div>';
+          newMatchResult += '<div class="match-info" style="background-image: url(assets/images/' + responseObject[i].mapOne.split(" ", 1) +  '.jpg);">';
+          newMatchResult += '<h3>' + responseObject[i].mapOne +  '</h3>'+'</div>';
+          var words = responseObject[i].mapOne.split(" ");
+          var firstWord = words[0];
+          var secondWord = words[1];
+          if (firstWord != 'Forfeit' && secondWord != 'Forfeit' ) {
+            if (responseObject[i].bestOf >= 2) {
+              newMatchResult += '<div class="match-info" style="background-image: url(assets/images/' + responseObject[i].mapTwo.split(" ", 1) +  '.jpg);">';
+              newMatchResult += '<h3>' + responseObject[i].mapTwo +  '</h3>'+'</div>';
+            }
+            if (responseObject[i].bestOf >= 3) {
+              newMatchResult += '<div class="match-info" style="background-image: url(assets/images/' + responseObject[i].mapThree.split(" ", 1) +  '.jpg);">';
+              newMatchResult += '<h3>' + responseObject[i].mapThree +  '</h3>'+'</div>';
+            }
+          }
+          var words = '';
 
           document.getElementById('piilotettu').innerHTML = newMatchResult; //add the HTML data to the hidden ul
         }
@@ -176,7 +206,8 @@ xhru.onload =  function() {                              //#4 when readystate c
         newMatchUpcoming += '<button class="match-item" style="background-color:' + leagueColor + ';">';
         newMatchUpcoming +=  matchDay.slice(8,10) + "."+ matchDay.slice(5,7) + " | " +"TPJ vs " + responseObject[i].upcoming_enemy + " ";
         newMatchUpcoming += '</button>';
-        newMatchUpcoming += '<div class="match-info"><b>' + "League:" + " " + responseObject[i].upcoming_league + '</b><br>';
+        newMatchUpcoming += '<div class="match-info" style="background-image: url(assets/images/' + responseObject[i].upcoming_league.split(" ", 1) +  '.png);">';
+        newMatchUpcoming += '<b>' + "League:" + " " + responseObject[i].upcoming_league + '</b><br>';
         newMatchUpcoming += '<b>' + "BO: " + responseObject[i].upcoming_bestOf + '</b><br>';
         newMatchUpcoming += '<b>' + "Match day: " + matchDay.slice(8,10) + "." + matchDay.slice(5,7) + "." + matchDay.slice(0,4) +'</b><br>';
         newMatchUpcoming += '<b>'+ "Starting time: " + " " + responseObject[i].upcoming_startTime +'</b> <br>';
@@ -200,7 +231,7 @@ xhru.send(null);                                       //#3 Send the request
 //------------------------ MATCH LIST MORE INFO --------------------------------------------
 $('.match-list').on('click', '.match-item', function(e){
   e.preventDefault();
-  $(this).next('.match-info').not('animated').slideToggle();
+  $(this).nextAll('.match-info').not('animated').slideToggle();
 
 });
 
