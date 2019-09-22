@@ -133,7 +133,7 @@
   }
 
   .match-info{
-    color: black;
+    color: white;
     font-size: 16px;
     display:none;
     width: 90%;
@@ -145,8 +145,10 @@
     background-position: center;
     background-size: cover;
     
+    
 
   }
+  
 
 //---------------DESKTOP-----------------------------
 @media only screen and (min-width: 768px) {
