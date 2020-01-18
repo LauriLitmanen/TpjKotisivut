@@ -2,7 +2,8 @@ $(function(){ //On page load function
 
 
   $(window)
-
+  // ----------------- Copyright year -----------------
+  document.getElementById("copyright").innerHTML = new Date().getFullYear()
   //-----------------NAVBAR ONSCROLL------------------
 
   window.onscroll = function() {myFunction()};
@@ -37,6 +38,7 @@ $(function(){ //On page load function
     duration: 1200,
     once: true,
   });
+
 
   // -----------------FADE IN IMAGE---------------
 
@@ -100,16 +102,16 @@ $(function(){ //On page load function
             else {
               matchColor = 'lightcoral';
             }
-         
+
           if (responseObject[i].league == 'FEL'){
             liiga = 'FEL';
-          }              
+          }
           else if (responseObject[i].league == 'Challengermode') {
             liiga = 'Challengermode';
           }
           else {
             liiga = 'Other';
-          }                          
+          }
 
           newMatchResult += '<li data-aos="flip-right" data-aos-anchor-placement="center-bottom">'; //constructing the html with the json data
           newMatchResult += '<button class="match-item" style="background:' + matchColor + ' url(assets/images/' +liiga+ '.png); background-position: 10px 15px; background-repeat: no-repeat; background-size: 25px">';
@@ -131,10 +133,10 @@ $(function(){ //On page load function
             }
           }
           var words = '';
-          
+
           document.getElementById('results-list').innerHTML = newMatchResult; //add the new HTML data to the page
         }
-        
+
         var newMatchResult = '';                            // clear data
 
         for (var i = 8; i < responseObject.length; i++) {   //loop trough the rest of the matches
@@ -146,7 +148,7 @@ $(function(){ //On page load function
           }                                                 //constructing the html with the json data
           if (responseObject[i].league == 'FEL'){
             liiga = 'FEL';
-          }              
+          }
           else if (responseObject[i].league == 'Challengermode') {
             liiga = 'NEL';
           }
@@ -155,7 +157,7 @@ $(function(){ //On page load function
           }
           else {
             liiga = 'Other';
-          }                          
+          }
 
           newMatchResult += '<li data-aos="flip-right" data-aos-anchor-placement="center-bottom">'; //constructing the html with the json data
           newMatchResult += '<button class="match-item" style="background:' + matchColor + ' url(assets/images/' +liiga+ '.png); background-position: 10px 15px; background-repeat: no-repeat; background-size: 25px">';
@@ -250,6 +252,7 @@ xhru.onload =  function() {                              //#4 when readystate c
 xhru.open ('GET', 'https://api.tpj.fi/api/data/upcoming', true); //#2 Prepare the request
 xhru.send(null);                                       //#3 Send the request
 });
+
 //------------------------ MATCH LIST MORE INFO --------------------------------------------
 $('.match-list').on('click', '.match-item', function(e){
   e.preventDefault();
