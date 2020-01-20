@@ -229,9 +229,13 @@
       @supports (-ms-ime-align: auto) {
         .match-list {
           button {
-            width: 500px;
+            width: 90%;
             height: 55px;
           }
+        }
+        .match-info {
+          width: 90%;
+          padding: 10px 0px;
         }
       }
 
