@@ -226,6 +226,15 @@
         }
       }
 
+      @supports (-ms-ime-align: auto) {
+        .match-list {
+          button {
+            width: 500px;
+            height: 55px;
+          }
+        }
+      }
+
       .spacer {
         flex-grow: 1;
       }
