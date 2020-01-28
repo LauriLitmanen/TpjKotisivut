@@ -109,6 +109,12 @@ $(function(){ //On page load function
           else if (responseObject[i].league == 'Challengermode') {
             liiga = 'Challengermode';
           }
+          else if (responseObject[i].league == 'ESL') {
+            liiga = 'ESL';
+          }
+          else if (responseObject[i].league == 'ESL Open') {
+            liiga = 'ESL';
+          }
           else {
             liiga = 'Other';
           }
@@ -151,6 +157,12 @@ $(function(){ //On page load function
           }
           else if (responseObject[i].league == 'Challengermode') {
             liiga = 'NEL';
+          }
+          else if (responseObject[i].league == 'ESL') {
+            liiga = 'ESL';
+          }
+          else if (responseObject[i].league == 'ESL Open') {
+            liiga = 'ESL';
           }
           else if (responseObject[i].league == 'NEL') {
             liiga = 'NEL';
