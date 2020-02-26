@@ -29,17 +29,18 @@
     align-items: center;
     ul{
       padding-left: 0px;
+      
     }
 
     li{
       list-style: none;
       margin: 10px 30px;
 
-      font-size: 20px;
+      font-size: 50px;
       padding: 15px 15px;
       color: #fff;
-      border: 1px solid #fff;
-      border-radius: 50%;
+      //border: 1px solid #fff;
+      //border-radius: 50%;
 
     }
 
@@ -74,12 +75,36 @@
         }
 
         ul {
-
-        }
-        li{
-          border: 1px solid #fff;
-
+          display: flex;
+          flex-direction: row;
         }
 
+        li {
+          font-size: 100px;
+        }
+
+        li :hover{
+          //border: 1px solid #fff;
+          //color: #9147FF;
+        }
+        a[href='https://www.twitch.tv/tpjcommunity'] :hover {
+          color: #9147FF;
+        }
+        a[href='https://twitter.com/tpjcommunity'] :hover {
+          color: #23A1F2;
+        }
+        a[href='https://www.instagram.com/tpjcommunity/'] :hover {
+          background: -webkit-linear-gradient(90deg, #fdf497 0%, #fdf497 2%, #fd5949 30%,#d6249f 60%,#285AEB 98%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+        a[href='mailto:gaming.tpj@gmail.com'] :hover { 
+          color: #DADADA;
+        }
+
+
+        
       }
+
+      
 }
