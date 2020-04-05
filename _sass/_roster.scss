@@ -19,7 +19,13 @@
     }
   }
 
+  .desktop-roster {
+    display: none;
+  }
 
+  .mobile-roster {
+    display: flex;
+  }
 
   #substitute-container {
     //margin-right: 125px;
@@ -27,13 +33,14 @@
 
   #substitute-wrap{
     display: flex;
-    flex-direction: column;
+    //flex-direction: column;
     justify-content: center;
     margin-top: 50px;
+    flex-wrap: wrap;
   }
 
   #roster-wrap{
-    display: flex;
+    
     //flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
@@ -67,7 +74,7 @@
     //padding: 20px;
 
     img {
-      border-radius: 10px;
+      //border-radius: 10px;
     }
 
   }
@@ -85,7 +92,7 @@
   }
 
   .caster-roster-wrapper {
-    display: flex;
+    //display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -120,7 +127,7 @@
         }
       }
       .caster-roster-wrapper {
-        display: flex;
+        //display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
@@ -128,12 +135,20 @@
         flex-wrap: wrap;
       }
 
+      .mobile-roster {
+        display: none;
+     }
+
+     .desktop-roster {
+       display: flex;
+     }
+
       #substitute-container {
         //margin-right: 125px;
       }
 
       #roster-wrap{
-        display: flex;
+        //display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
