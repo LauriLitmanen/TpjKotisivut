@@ -1,23 +1,40 @@
 $(function(){ //On page load function
-
-
   $(window)
-  // ----------------- Copyright year -----------------
-  document.getElementById("copyright").innerHTML = new Date().getFullYear()
+  $('#tpjlogo').addClass("spinner");
+  
+ 
+  setTimeout(() => {
+    document.getElementById('tpjlogo').classList.remove('spinner');
+    //$('html').css("background", 'url(assets/css/de_train_sumea.jpg) no-repeat center center');
+    
+  },2000);
+    
+  
   //-----------------NAVBAR ONSCROLL------------------
-
+  
   window.onscroll = function() {myFunction()};
 
   var header = document.getElementById("nav-wrapper");
   var sticky = header.offsetTop;
+  console.log('sticky = ' + sticky);
+  console.log('pageYOffset = ' + pageYOffset);
 
   function myFunction() {
     if (window.pageYOffset > sticky) {
       header.classList.add("fixed");
+      console.log('sticky = ' + sticky);
+      console.log('pageYOffset = ' + pageYOffset);
     } else {
       header.classList.remove("fixed");
+      console.log('sticky = ' + sticky);
+      console.log('pageYOffset = ' + pageYOffset);
     }
   }
+  
+  
+  // ----------------- Copyright year -----------------
+  document.getElementById("copyright").innerHTML = new Date().getFullYear()
+  
 
   //------------------TWITCH EMBEDDED-------------------
   /*
