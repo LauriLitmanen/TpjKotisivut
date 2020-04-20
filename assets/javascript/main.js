@@ -16,18 +16,15 @@ $(function(){ //On page load function
 
   var header = document.getElementById("nav-wrapper");
   var sticky = header.offsetTop;
-  console.log('sticky = ' + sticky);
-  console.log('pageYOffset = ' + pageYOffset);
+  
 
   function myFunction() {
     if (window.pageYOffset > sticky) {
       header.classList.add("fixed");
-      console.log('sticky = ' + sticky);
-      console.log('pageYOffset = ' + pageYOffset);
+      
     } else {
       header.classList.remove("fixed");
-      console.log('sticky = ' + sticky);
-      console.log('pageYOffset = ' + pageYOffset);
+      
     }
   }
   
